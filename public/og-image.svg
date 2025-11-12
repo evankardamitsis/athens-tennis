@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="4%" y1="0%" x2="96%" y2="100%">
+      <stop offset="0%" stop-color="#0BBE64" />
+      <stop offset="50%" stop-color="#15cf72" />
+      <stop offset="100%" stop-color="#0F9C4F" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" rx="48" ry="48" />
+  <g fill="#F8FAFC" font-family="Geist, 'Segoe UI', sans-serif" font-weight="600">
+    <text font-size="72" x="80" y="150">AthensTennis</text>
+    <text font-size="36" x="80" y="214">Ερασιτεχνικό Πρωτάθλημα Τένις Αθήνας</text>
+  </g>
+  <g transform="translate(80,280)">
+    <rect x="0" y="0" width="320" height="140" rx="28" fill="#0F172A" opacity="0.75" />
+    <text x="160" y="70" fill="#F8D34E" font-size="42" font-weight="700" text-anchor="middle" dominant-baseline="middle">
+      Playoffs 2026
+    </text>
+  </g>
+  <circle cx="1040" cy="120" r="72" fill="#F8D34E" opacity="0.9" />
+  <rect x="900" y="360" width="220" height="20" rx="10" fill="#F8FAFC" opacity="0.25" />
+  <rect x="900" y="398" width="260" height="20" rx="10" fill="#F8FAFC" opacity="0.3" />
+  <rect x="900" y="436" width="200" height="20" rx="10" fill="#F8FAFC" opacity="0.25" />
+</svg>
+
