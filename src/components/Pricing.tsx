@@ -35,9 +35,13 @@ export function Pricing() {
     return (
         <section
             id="pricing"
-            className="bg-white py-16 sm:py-20"
+            className="relative overflow-hidden bg-white py-16 sm:py-20"
             aria-labelledby="pricing-heading"
         >
+            <div className="pointer-events-none absolute inset-0 -z-10 bg-linear-to-tr from-emerald-50 via-white to-emerald-100/70" />
+            <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-24 bg-linear-to-b from-emerald-400/30 via-emerald-200/10 to-transparent" />
+            <div className="pointer-events-none absolute -left-24 bottom-0 h-96 w-96 rounded-full bg-emerald-300/20 blur-[150px]" />
+            <div className="pointer-events-none absolute -right-12 top-12 h-64 w-64 rounded-full bg-amber-200/25 blur-[120px]" />
             <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
                 <motion.div
                     initial="hidden"
@@ -70,7 +74,7 @@ export function Pricing() {
                             variants={fadeInUp}
                             className={`flex h-full flex-col rounded-3xl border p-6 shadow-lg transition ${plan.highlighted
                                 ? "border-emerald-200 bg-linear-to-br from-emerald-500 via-emerald-400 to-emerald-500 text-white shadow-emerald-500/30"
-                                : "border-slate-100 bg-white shadow-emerald-500/10"
+                                : "border-white/70 bg-white/90 shadow-emerald-500/10 backdrop-blur"
                                 }`}
                         >
                             <div className="flex-1 space-y-4">
@@ -114,7 +118,7 @@ export function Pricing() {
                                     href={plan.href}
                                     className={`inline-flex w-full items-center justify-center rounded-full px-6 py-3 text-base font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${plan.highlighted
                                         ? "bg-white text-emerald-600 shadow-lg shadow-black/10 focus-visible:ring-white focus-visible:ring-offset-emerald-500"
-                                        : "bg-(--color-primary) text-white shadow-lg shadow-emerald-500/30 focus-visible:ring-(--color-primary)"
+                                        : "bg-(--color-primary) text-white shadow-lg shadow-emerald-500/30 focus-visible:ring-(--color-primary) focus-visible:ring-offset-white"
                                         }`}
                                 >
                                     {plan.cta}
