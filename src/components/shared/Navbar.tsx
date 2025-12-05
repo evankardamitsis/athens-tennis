@@ -47,8 +47,8 @@ export function Navbar() {
       className="pointer-events-none fixed left-0 top-0 z-50 w-full"
     >
       <div
-        className={`pointer-events-auto glass-blur mx-auto flex max-w-[1440px] items-center justify-between rounded-full border border-white/20 px-5 py-3 shadow transition-all ${isScrolled
-          ? "mt-4 shadow-emerald-500/20 shadow-lg"
+        className={`pointer-events-auto mx-auto flex max-w-[1440px] items-center justify-between rounded-full border border-white/20 bg-white px-5 py-3 shadow transition-all ${isScrolled
+          ? "mt-4 shadow-lg"
           : "mt-6 shadow-transparent"
           }`}
       >
@@ -58,17 +58,17 @@ export function Navbar() {
           onClick={closeMenu}
           aria-label="Αρχική AthensTennis"
         >
-          <span className="relative inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/80 p-1 shadow ring-1 ring-white/70">
-            <Image
-              src="/athenstennis-logo.png"
-              alt="AthensTennis logo"
-              fill
-              sizes="48px"
-              className="object-contain"
-              priority
-            />
-          </span>
-          <span className="hidden sm:inline">AthensTennis</span>
+
+          <Image
+            src="/athens_tennis_logo.png"
+            alt="AthensTennis logo"
+            width={45}
+            height={45}
+            className="object-contain"
+            priority
+          />
+
+          <span className="text-primary-500">AthensTennis</span>
         </Link>
 
         <div className="hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex">
@@ -89,7 +89,7 @@ export function Navbar() {
             href="https://athenstennis.gr/register"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-[#D4DE26] px-5 py-2 text-sm font-semibold text-primary-500 shadow-lg shadow-emerald-500/30 transition hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
+            className="rounded-full bg-[#D4DE26] px-5 py-2 text-sm font-semibold text-[#0B3F63]! shadow-lg shadow-emerald-500/30 transition hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
           >
             {tCommon("register")}
           </a>
@@ -136,7 +136,7 @@ export function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={closeMenu}
-                className="rounded-2xl bg-[#D4DE26] px-3 py-2 text-center font-semibold text-primary-500 shadow-lg transition hover:bg-accent-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
+                className="rounded-2xl bg-[#D4DE26] px-3 py-2 text-center font-semibold text-[#0B3F63]! shadow-lg transition hover:bg-accent-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
               >
                 {tCommon("register")}
               </a>

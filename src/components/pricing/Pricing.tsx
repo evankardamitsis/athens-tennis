@@ -118,8 +118,8 @@ export function Pricing() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className={`inline-flex w-full items-center justify-center rounded-full px-6 py-3 text-base font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${plan.highlighted
-                                        ? "bg-white text-primary-500 shadow-lg shadow-black/10 focus-visible:ring-white focus-visible:ring-offset-emerald-500"
-                                        : "bg-[#D4DE26] text-primary-500 shadow-lg shadow-emerald-500/30 focus-visible:ring-primary-500 focus-visible:ring-offset-white"
+                                        ? "bg-white text-[#0B3F63] shadow-lg shadow-black/10 focus-visible:ring-white focus-visible:ring-offset-emerald-500"
+                                        : "bg-[#D4DE26] text-[#0B3F63] shadow-lg shadow-emerald-500/30 focus-visible:ring-primary-500 focus-visible:ring-offset-white"
                                         }`}
                                 >
                                     {plan.cta}

@@ -23,7 +23,17 @@
     "liveRanking": "Live Ranking",
     "liveRankingDesc": "Interactive leaderboards by division, age and area.",
     "community": "Community",
-    "communityDesc": "Viber group for quick coordination, events and mini leagues."
+    "communityDesc": "Viber group for quick coordination, events and mini leagues.",
+    "secondary": {
+      "title": "What is AthensTennis",
+      "description": "AthensTennis is the first amateur tennis championship in Athens — for all those who want to play matches easily and in a positive, friendly environment.",
+      "subheading": "Here you will find:",
+      "features": {
+        "matchesForAllLevels": "Matches for all levels",
+        "friendlyEnvironment": "Friendly, positive environment",
+        "clearStructure": "Clear structure"
+      }
+    }
   },
   "structure": {
     "title": "How it works",

@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { fadeInUp, staggerContainer } from "@/components/shared";
+import { fadeInUp } from "@/components/shared";
 
 export function Hero() {
     const t = useTranslations("hero");
@@ -12,7 +12,7 @@ export function Hero() {
     return (
         <section id="top" className="relative">
             {/* Hero Main */}
-            <div className="relative overflow-hidden py-16 pt-8 sm:py-20 lg:py-24 lg:pt-8">
+            <div className="relative overflow-hidden py-16 pt-8 sm:py-20 lg:py-12 lg:pt-8">
                 <div className="mx-auto max-w-[1440px]">
                     <div className="mx-5 rounded-[40px] bg-linear-to-br from-white via-white to-neutral-50 px-14 py-8 sm:py-12 lg:py-16">
                         <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 lg:items-center">
@@ -24,7 +24,7 @@ export function Hero() {
                                 variants={fadeInUp}
                             >
                                 {/* Brand Badge */}
-                                <span className="inline-flex items-center rounded-full bg-neutral-100 px-4 py-2 text-sm font-medium text-neutral-600">
+                                <span className="inline-flex items-center rounded-full bg-neutral-100 px-4 py-2 text-sm font-medium text-primary-500">
                                     {t("badge")}
                                 </span>
 
@@ -50,13 +50,13 @@ export function Hero() {
                                         href="https://athenstennis.gr/register"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="inline-flex items-center justify-center rounded-[99px] bg-[#D4DE26] px-8 py-3 text-base font-semibold text-primary-500 transition hover:bg-accent-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2"
+                                        className="inline-flex items-center justify-center rounded-[99px] bg-[#D4DE26] px-8 py-3 text-base font-semibold text-[#0B3F63]! transition hover:bg-accent-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2"
                                     >
                                         {t("ctaPrimary")}
                                     </a>
                                     <Link
                                         href="#how-it-works"
-                                        className="inline-flex items-center justify-center rounded-[99px] border border-[#D4DE26] bg-transparent px-8 py-3 text-base font-semibold text-primary-500 transition hover:bg-accent-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2"
+                                        className="inline-flex items-center justify-center rounded-[99px] border border-[#D4DE26] bg-transparent px-8 py-3 text-base font-semibold text-[#0B3F63]! transition hover:bg-accent-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2"
                                     >
                                         {t("ctaSecondary")}
                                     </Link>
@@ -85,53 +85,6 @@ export function Hero() {
                             </motion.div>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            {/* Hero Secondary - Feature Cards */}
-            <div className="bg-white py-16 sm:py-20">
-                <div className="mx-auto max-w-[1440px] px-5">
-                    <motion.div
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, amount: 0.2 }}
-                        variants={staggerContainer}
-                        className="grid gap-6 md:grid-cols-3"
-                    >
-                        <motion.div
-                            variants={fadeInUp}
-                            className="rounded-2xl bg-neutral-50 p-6"
-                        >
-                            <p className="text-sm font-semibold uppercase tracking-wide text-neutral-500">
-                                {t("matchmaking")}
-                            </p>
-                            <p className="mt-3 text-base text-neutral-700">
-                                {t("matchmakingDesc")}
-                            </p>
-                        </motion.div>
-                        <motion.div
-                            variants={fadeInUp}
-                            className="rounded-2xl bg-neutral-50 p-6"
-                        >
-                            <p className="text-sm font-semibold uppercase tracking-wide text-neutral-500">
-                                {t("liveRanking")}
-                            </p>
-                            <p className="mt-3 text-base text-neutral-700">
-                                {t("liveRankingDesc")}
-                            </p>
-                        </motion.div>
-                        <motion.div
-                            variants={fadeInUp}
-                            className="rounded-2xl bg-neutral-50 p-6"
-                        >
-                            <p className="text-sm font-semibold uppercase tracking-wide text-neutral-500">
-                                {t("community")}
-                            </p>
-                            <p className="mt-3 text-base text-neutral-700">
-                                {t("communityDesc")}
-                            </p>
-                        </motion.div>
-                    </motion.div>
                 </div>
             </div>
         </section >

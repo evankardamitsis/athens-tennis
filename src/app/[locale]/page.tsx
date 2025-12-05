@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/shared";
 import { Hero } from "@/components/hero";
+import { HeroSecondary } from "@/components/hero";
 import { HowItWorks } from "@/components/structure";
 import { Facilities } from "@/components/facilities";
 import { Features } from "@/components/why-us";
@@ -21,6 +22,7 @@ export default function Home() {
       <Navbar />
       <main className="relative mx-auto flex max-w-[1440px] flex-col overflow-hidden pt-24">
         <Hero />
+        <HeroSecondary />
         <HowItWorks />
         <Facilities />
         <Features />

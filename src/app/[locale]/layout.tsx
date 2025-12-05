@@ -51,9 +51,9 @@ export function generateMetadata(): Metadata {
       canonical: siteUrl,
     },
     icons: {
-      icon: "/favicon.ico",
-      shortcut: "/favicon.ico",
-      apple: "/favicon.ico",
+      icon: "/athens_tennis_logo.png",
+      shortcut: "/athens_tennis_logo.png",
+      apple: "/athens_tennis_logo.png",
     },
   };
 }
