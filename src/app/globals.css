@@ -1,16 +1,140 @@
 @import "tailwindcss";
 
+/* ============================================
+   Design System - Color Tokens
+   ============================================ */
+
 :root {
   color-scheme: light;
-  --background: #f8fafc;
-  --foreground: #0f172a;
-  --muted: #e2e8f0;
-  --muted-foreground: #475569;
-  --primary: #0bbe64;
-  --primary-foreground: #f8fafc;
-  --accent: #f8d34e;
-  --accent-foreground: #0f172a;
+  
+  /* Primary Brand Colors (Main font color: #0B3F63) */
+  --color-primary-50: #e6f0f5;
+  --color-primary-100: #b3d1e0;
+  --color-primary-200: #80b2cb;
+  --color-primary-300: #4d93b6;
+  --color-primary-400: #1a74a1;
+  --color-primary-500: #0B3F63;
+  --color-primary-600: #093250;
+  --color-primary-700: #07253d;
+  --color-primary-800: #05182a;
+  --color-primary-900: #030b17;
+  --color-primary-950: #010508;
+  
+  /* Accent Colors (Brand accent: #D4DE26) */
+  --color-accent-50: #f9fce6;
+  --color-accent-100: #f0f5b3;
+  --color-accent-200: #e7ee80;
+  --color-accent-300: #dee74d;
+  --color-accent-400: #d5e01a;
+  --color-accent-500: #D4DE26;
+  --color-accent-600: #aab21e;
+  --color-accent-700: #808617;
+  --color-accent-800: #565a0f;
+  --color-accent-900: #2c2e08;
+  --color-accent-950: #141501;
+  
+  /* Neutral Colors */
+  --color-neutral-50: #f8fafc;
+  --color-neutral-100: #f1f5f9;
+  --color-neutral-200: #e2e8f0;
+  --color-neutral-300: #cbd5e1;
+  --color-neutral-400: #94a3b8;
+  --color-neutral-500: #64748b;
+  --color-neutral-600: #475569;
+  --color-neutral-700: #334155;
+  --color-neutral-800: #1e293b;
+  --color-neutral-900: #0f172a;
+  --color-neutral-950: #020617;
+  
+  /* Semantic Colors */
+  --color-success-50: #f0fdf4;
+  --color-success-500: #22c55e;
+  --color-success-600: #16a34a;
+  --color-success-700: #15803d;
+  
+  --color-warning-50: #fffbeb;
+  --color-warning-500: #f59e0b;
+  --color-warning-600: #d97706;
+  
+  --color-error-50: #fef2f2;
+  --color-error-500: #ef4444;
+  --color-error-600: #dc2626;
+  
+  --color-info-50: #eff6ff;
+  --color-info-500: #3b82f6;
+  --color-info-600: #2563eb;
+  
+  /* Legacy/Compatibility Variables */
+  --background: #F3F5F7;
+  --foreground: var(--color-primary-500); /* #0B3F63 - main font color */
+  --muted: var(--color-neutral-200);
+  --muted-foreground: var(--color-neutral-600);
+  --primary: var(--color-primary-500); /* #0B3F63 */
+  --primary-foreground: #ffffff;
+  --accent: var(--color-accent-500); /* #D4DE26 */
+  --accent-foreground: var(--color-primary-500); /* #0B3F63 */
   --card: #ffffff;
+  
+  /* Spacing Scale */
+  --spacing-0: 0;
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-10: 2.5rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+  --spacing-20: 5rem;
+  --spacing-24: 6rem;
+  --spacing-32: 8rem;
+  
+  /* Border Radius */
+  --radius-none: 0;
+  --radius-sm: 0.125rem;
+  --radius-base: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+  --radius-button: 99px;
+  --radius-full: 9999px;
+  
+  /* Badge Background (Primary with 12% opacity) */
+  --badge-bg: #0B3F631F;
+  --badge-bg-rgba: rgba(11, 63, 99, 0.12);
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-base: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  
+  /* Colored Shadows */
+  --shadow-primary-sm: 0 1px 2px 0 rgb(11 63 99 / 0.2);
+  --shadow-primary-md: 0 4px 6px -1px rgb(11 63 99 / 0.2), 0 2px 4px -2px rgb(11 63 99 / 0.2);
+  --shadow-primary-lg: 0 10px 15px -3px rgb(11 63 99 / 0.3), 0 4px 6px -4px rgb(11 63 99 / 0.3);
+  --shadow-primary-xl: 0 20px 25px -5px rgb(11 63 99 / 0.35), 0 8px 10px -6px rgb(11 63 99 / 0.35);
+  
+  --shadow-accent-sm: 0 1px 2px 0 rgb(212 222 38 / 0.2);
+  --shadow-accent-md: 0 4px 6px -1px rgb(212 222 38 / 0.2), 0 2px 4px -2px rgb(212 222 38 / 0.2);
+  --shadow-accent-lg: 0 10px 15px -3px rgb(212 222 38 / 0.3), 0 4px 6px -4px rgb(212 222 38 / 0.3);
+  
+  /* Z-Index Scale */
+  --z-base: 0;
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,7 +148,12 @@
   }
 }
 
+/* ============================================
+   Tailwind Theme Integration
+   ============================================ */
+
 @theme inline {
+  /* Colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
@@ -34,14 +163,55 @@
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
   --color-card: var(--card);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  
+  /* Primary Color Scale */
+  --color-primary-50: var(--color-primary-50);
+  --color-primary-100: var(--color-primary-100);
+  --color-primary-200: var(--color-primary-200);
+  --color-primary-300: var(--color-primary-300);
+  --color-primary-400: var(--color-primary-400);
+  --color-primary-500: var(--color-primary-500);
+  --color-primary-600: var(--color-primary-600);
+  --color-primary-700: var(--color-primary-700);
+  --color-primary-800: var(--color-primary-800);
+  --color-primary-900: var(--color-primary-900);
+  --color-primary-950: var(--color-primary-950);
+  
+  /* Accent Color Scale */
+  --color-accent-50: var(--color-accent-50);
+  --color-accent-100: var(--color-accent-100);
+  --color-accent-200: var(--color-accent-200);
+  --color-accent-300: var(--color-accent-300);
+  --color-accent-400: var(--color-accent-400);
+  --color-accent-500: var(--color-accent-500);
+  --color-accent-600: var(--color-accent-600);
+  --color-accent-700: var(--color-accent-700);
+  --color-accent-800: var(--color-accent-800);
+  --color-accent-900: var(--color-accent-900);
+  --color-accent-950: var(--color-accent-950);
+  
+  /* Neutral Color Scale */
+  --color-neutral-50: var(--color-neutral-50);
+  --color-neutral-100: var(--color-neutral-100);
+  --color-neutral-200: var(--color-neutral-200);
+  --color-neutral-300: var(--color-neutral-300);
+  --color-neutral-400: var(--color-neutral-400);
+  --color-neutral-500: var(--color-neutral-500);
+  --color-neutral-600: var(--color-neutral-600);
+  --color-neutral-700: var(--color-neutral-700);
+  --color-neutral-800: var(--color-neutral-800);
+  --color-neutral-900: var(--color-neutral-900);
+  --color-neutral-950: var(--color-neutral-950);
+  
+  /* Typography */
+  --font-sans: var(--font-ubuntu);
+  --font-mono: monospace;
 }
 
 body {
-  background: var(--background);
+  background: #F3F5F7;
   color: var(--foreground);
-  font-family: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont,
+  font-family: var(--font-ubuntu), "Ubuntu Sans", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
   min-height: 100vh;
 }
@@ -74,4 +244,10 @@ a {
   to {
     transform: translateX(-50%);
   }
+}
+
+/* Badge Styles */
+.badge-primary {
+  background-color: var(--badge-bg-rgba);
+  color: var(--color-primary-500);
 }

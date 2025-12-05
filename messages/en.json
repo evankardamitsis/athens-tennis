@@ -1,0 +1,139 @@
+{
+  "common": {
+    "register": "Register",
+    "learnMore": "Learn More",
+    "comingSoon": "Coming soon...",
+    "nextSeason": "Next season: January 2026 — Limited spots"
+  },
+  "nav": {
+    "howItWorks": "How It Works",
+    "ourPhilosophy": "Our Philosophy",
+    "rankings": "Rankings",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "AthensTennis",
+    "title": "The Championship of Our City",
+    "description": "Play <bold>organized and without commitment</bold> whenever you want. The championship that makes tennis easy and enjoyable.",
+    "ctaPrimary": "Register",
+    "ctaSecondary": "See how it works",
+    "matchmaking": "Matchmaking",
+    "matchmakingDesc": "Matching algorithm for balanced, strong games every week.",
+    "liveRanking": "Live Ranking",
+    "liveRankingDesc": "Interactive leaderboards by division, age and area.",
+    "community": "Community",
+    "communityDesc": "Viber group for quick coordination, events and mini leagues."
+  },
+  "structure": {
+    "title": "How it works",
+    "description": "Enter the AthensTennis experience in five simple steps.",
+    "step1": {
+      "title": "Registration",
+      "description": "Create your profile & level."
+    },
+    "step2": {
+      "title": "Placement",
+      "description": "Enter a division."
+    },
+    "step3": {
+      "title": "Schedule match",
+      "description": "Find time/court with your opponent."
+    },
+    "step4": {
+      "title": "Play & report score",
+      "description": "Quick entry, confirmation."
+    },
+    "step5": {
+      "title": "Climb the ranking",
+      "description": "Win positions and enter the Playoffs."
+    }
+  },
+  "whyUs": {
+    "badge": "Why AthensTennis",
+    "title": "Make your game better.",
+    "description": "From registration to Playoffs, our platform guides you every step of the way.",
+    "feature1": {
+      "title": "Smart matchmaking",
+      "description": "Play with opponents close to your level."
+    },
+    "feature2": {
+      "title": "Easy organization",
+      "description": "Schedule matches with built-in scheduler."
+    },
+    "feature3": {
+      "title": "Live results",
+      "description": "Enter scores, see rankings in real time."
+    },
+    "feature4": {
+      "title": "Community",
+      "description": "Player network, group chats, mini events."
+    },
+    "feature5": {
+      "title": "Leaderboards",
+      "description": "By category, age, area."
+    },
+    "feature6": {
+      "title": "Prizes & Playoffs",
+      "description": "Trophies, gifts, finals."
+    }
+  },
+  "registrationBanner": {
+    "title": "Let's play.",
+    "description": "Book your spot for the next season and enter Athens' ranking.",
+    "cta": "Register"
+  },
+  "pricing": {
+    "title": "Choose the package that suits you",
+    "description": "Flexibility to try the experience or play full season.",
+    "seasonPass": {
+      "name": "Season Pass",
+      "description": "Participation in the entire season",
+      "price": "€79",
+      "cta": "Register",
+      "perk1": "Ranking & Playoffs",
+      "perk2": "Live rankings",
+      "perk3": "Match scheduling",
+      "perk4": "Community"
+    },
+    "matchPack": {
+      "name": "Match Pack",
+      "description": "5 prepaid matches",
+      "price": "€39",
+      "cta": "Start now",
+      "perk1": "Match scheduling",
+      "perk2": "Score entry",
+      "perk3": "Ranking"
+    },
+    "note": "*Court fees not included."
+  },
+  "viberGroup": {
+    "badge": "Viber Community",
+    "title": "Join the community's Viber group.",
+    "description": "Schedule friendly matches, find opponents, learn the news first.",
+    "note": "We respect fair play & respect rules.",
+    "cta": "Join Viber"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions"
+  },
+  "footer": {
+    "description": "Athens' tennis championship. Balanced matches, live rankings, community.",
+    "links": {
+      "about": "About",
+      "howItWorks": "How It Works",
+      "pricing": "Pricing",
+      "faq": "FAQ",
+      "contact": "Contact"
+    },
+    "social": {
+      "instagram": "Instagram",
+      "facebook": "Facebook"
+    },
+    "legal": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
+    "copyright": "© 2025 AthensTennis. All rights reserved."
+  }
+}

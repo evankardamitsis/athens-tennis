@@ -1,0 +1,139 @@
+{
+  "common": {
+    "register": "Κάνε Εγγραφή",
+    "learnMore": "Μάθε περισσότερα",
+    "comingSoon": "Σύντομα...",
+    "nextSeason": "Επόμενη σεζόν: Ιανουάριος 2026 — Περιορισμένες θέσεις"
+  },
+  "nav": {
+    "howItWorks": "Πώς λειτουργεί",
+    "ourPhilosophy": "Η φιλοσοφία μας",
+    "rankings": "Rankings",
+    "faq": "FAQ",
+    "contact": "Επικοινωνία"
+  },
+  "hero": {
+    "badge": "AthensTennis",
+    "title": "Το Πρωτάθλημα Της Πόλης Μας",
+    "description": "Παίξε <bold>οργανωμένα και χωρίς δέσμευση</bold> όποτε εσύ θες. Το πρωτάθλημα που κάνει το τένις εύκολο και απολαυστικό.",
+    "ctaPrimary": "Κάνε την εγγραφή σου",
+    "ctaSecondary": "Δες πώς λειτουργεί",
+    "matchmaking": "Matchmaking",
+    "matchmakingDesc": "Αλγόριθμος ζευγαρώματος για ισορροπημένα, δυνατά παιχνίδια κάθε εβδομάδα.",
+    "liveRanking": "Live Ranking",
+    "liveRankingDesc": "Διαδραστικά leaderboards ανά division, ηλικία και περιοχή.",
+    "community": "Community",
+    "communityDesc": "Viber group για γρήγορες συνεννοήσεις, events και mini leagues."
+  },
+  "structure": {
+    "title": "Πώς λειτουργεί",
+    "description": "Μπες στην εμπειρία AthensTennis σε πέντε απλά βήματα.",
+    "step1": {
+      "title": "Εγγραφή",
+      "description": "Φτιάχνεις προφίλ & επίπεδο."
+    },
+    "step2": {
+      "title": "Τοποθέτηση",
+      "description": "Μπαίνεις σε division."
+    },
+    "step3": {
+      "title": "Ορισμός αγώνα",
+      "description": "Βρίσκεις ώρα/γήπεδο με τον αντίπαλο."
+    },
+    "step4": {
+      "title": "Παίζεις & δηλώνεις σκορ",
+      "description": "Γρήγορη καταχώριση, επιβεβαίωση."
+    },
+    "step5": {
+      "title": "Αναρριχήσου στο ranking",
+      "description": "Κέρδισε θέσεις και μπες στα Playoffs."
+    }
+  },
+  "whyUs": {
+    "badge": "Γιατί AthensTennis",
+    "title": "Κάνε το παιχνίδι σου καλύτερο.",
+    "description": "Από την εγγραφή μέχρι τα Playoffs, η πλατφόρμα μας σε οδηγεί σε κάθε βήμα.",
+    "feature1": {
+      "title": "Έξυπνο ματσάρισμα",
+      "description": "Παίζεις με αντιπάλους κοντά στο επίπεδό σου."
+    },
+    "feature2": {
+      "title": "Εύκολη οργάνωση",
+      "description": "Κλείσε αγώνες με ενσωματωμένο scheduler."
+    },
+    "feature3": {
+      "title": "Live αποτελέσματα",
+      "description": "Κατάχωρησε σκορ, δες rankings σε πραγματικό χρόνο."
+    },
+    "feature4": {
+      "title": "Κοινότητα",
+      "description": "Δίκτυο παικτών, ομαδικά chats, mini events."
+    },
+    "feature5": {
+      "title": "Leaderboards",
+      "description": "Ανά κατηγορία, ηλικία, περιοχή."
+    },
+    "feature6": {
+      "title": "Βραβεία & Playoffs",
+      "description": "Κύπελλα, δώρα, τελικοί."
+    }
+  },
+  "registrationBanner": {
+    "title": "Έλα να παίξουμε.",
+    "description": "Κλείσε θέση για την επόμενη σεζόν και μπες στο ranking της Αθήνας.",
+    "cta": "Κάνε Εγγραφή"
+  },
+  "pricing": {
+    "title": "Διαλέγεις το πακέτο που σου ταιριάζει",
+    "description": "Ευελιξία για να δοκιμάσεις την εμπειρία ή να παίξεις full season.",
+    "seasonPass": {
+      "name": "Season Pass",
+      "description": "Συμμετοχή σε ολόκληρη τη σεζόν",
+      "price": "€79",
+      "cta": "Κάνε Εγγραφή",
+      "perk1": "Κατάταξη & Playoffs",
+      "perk2": "Live rankings",
+      "perk3": "Ορισμός αγώνων",
+      "perk4": "Community"
+    },
+    "matchPack": {
+      "name": "Match Pack",
+      "description": "5 αγώνες προπληρωμένοι",
+      "price": "€39",
+      "cta": "Ξεκίνα τώρα",
+      "perk1": "Ορισμός αγώνων",
+      "perk2": "Καταχώρηση σκορ",
+      "perk3": "Βαθμολογία"
+    },
+    "note": "*Τέλη γηπέδου δεν περιλαμβάνονται."
+  },
+  "viberGroup": {
+    "badge": "Viber Community",
+    "title": "Μπες στο Viber group της κοινότητας.",
+    "description": "Κλείσε φιλικά, βρες αντιπάλους, μάθε πρώτος τα νέα.",
+    "note": "Σεβόμαστε τους κανόνες fair play & σεβασμού.",
+    "cta": "Join στο Viber"
+  },
+  "faq": {
+    "title": "Συχνές Ερωτήσεις"
+  },
+  "footer": {
+    "description": "Το πρωτάθλημα τένις της Αθήνας. Ισορροπημένα ματς, live rankings, community.",
+    "links": {
+      "about": "Σχετικά",
+      "howItWorks": "Πώς λειτουργεί",
+      "pricing": "Τιμές",
+      "faq": "FAQ",
+      "contact": "Επικοινωνία"
+    },
+    "social": {
+      "instagram": "Instagram",
+      "facebook": "Facebook"
+    },
+    "legal": {
+      "privacy": "Πολιτική Απορρήτου",
+      "terms": "Όροι Χρήσης"
+    },
+    "copyright": "© 2025 AthensTennis. Όλα τα δικαιώματα κατοχυρωμένα."
+  }
+}

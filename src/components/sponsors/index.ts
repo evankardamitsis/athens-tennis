@@ -1,0 +1,1 @@
+export { SponsorsStrip } from "./SponsorsStrip";
