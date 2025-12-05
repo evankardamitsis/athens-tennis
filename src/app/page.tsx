@@ -11,7 +11,7 @@ import { Pricing } from "@/components/Pricing";
 import { SponsorsStrip } from "@/components/SponsorsStrip";
 import { Testimonials } from "@/components/Testimonials";
 import { TrustBar } from "@/components/TrustBar";
-import { WhatsAppJoin } from "@/components/WhatsAppJoin";
+import { ViberJoin } from "@/components/ViberJoin";
 
 export default function Home() {
   return (
@@ -19,11 +19,11 @@ export default function Home() {
       <Navbar />
       <main className="relative flex flex-col overflow-hidden pt-24">
         <Hero />
-        <TrustBar />
-        <LiveStats />
-        <WhatsAppJoin />
         <Features />
         <HowItWorks />
+        <TrustBar />
+        <LiveStats />
+        <ViberJoin />
         <CalendarEmbed />
         <Testimonials />
         <SponsorsStrip />

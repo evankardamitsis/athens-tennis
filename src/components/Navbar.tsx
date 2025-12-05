@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -49,14 +50,21 @@ export function Navbar() {
       >
         <Link
           href="#top"
-          className="flex items-center gap-2 text-lg font-semibold tracking-tight text-foreground"
+          className="flex items-center gap-3 text-lg font-semibold tracking-tight text-foreground"
           onClick={closeMenu}
           aria-label="Αρχική AthensTennis"
         >
-          <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-(--color-primary) text-sm font-bold text-white shadow-lg">
-            AT
+          <span className="relative inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/80 p-1 shadow ring-1 ring-white/70">
+            <Image
+              src="/athenstennis-logo.png"
+              alt="AthensTennis logo"
+              fill
+              sizes="48px"
+              className="object-contain"
+              priority
+            />
           </span>
-          AthensTennis
+          <span className="hidden sm:inline">AthensTennis</span>
         </Link>
 
         <div className="hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex">

@@ -13,7 +13,7 @@ import { fadeInUp, staggerContainer } from "./animations";
 
 const features = [
   {
-    title: "Έξυπνο ζευγάρωμα",
+    title: "Έξυπνο ματσάρισμα",
     description: "Παίζεις με αντιπάλους κοντά στο επίπεδό σου.",
     icon: Users,
   },

@@ -7,7 +7,7 @@ const trustSignals = [
     "300+ παίκτες",
     "500+ αγώνες",
     "Live rankings",
-    "WhatsApp community",
+    "Viber community",
 ];
 
 export function TrustBar() {

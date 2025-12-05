@@ -5,15 +5,15 @@ import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 import { fadeInUp } from "./animations";
 
-const whatsappLink = "https://chat.whatsapp.com/your-invite-code";
+const ViberLink = "https://chat.Viber.com/your-invite-code";
 
-export function WhatsAppJoin() {
+export function ViberJoin() {
     return (
         <>
             <section
                 id="community"
                 className="relative py-16 sm:py-20"
-                aria-labelledby="whatsapp-heading"
+                aria-labelledby="Viber-heading"
             >
                 <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
                     <motion.div
@@ -32,13 +32,13 @@ export function WhatsAppJoin() {
                             <div className="space-y-3">
                                 <p className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-sm font-semibold uppercase tracking-wide text-white/90">
                                     <MessageCircle className="h-4 w-4" />
-                                    WhatsApp Community
+                                    Viber Community
                                 </p>
                                 <h2
-                                    id="whatsapp-heading"
+                                    id="Viber-heading"
                                     className="text-2xl font-semibold sm:text-3xl"
                                 >
-                                    Μπες στο WhatsApp group της κοινότητας.
+                                    Μπες στο Viber group της κοινότητας.
                                 </h2>
                                 <p className="max-w-2xl text-base text-white/90 sm:text-lg">
                                     Κλείσε φιλικά, βρες αντιπάλους, μάθε πρώτος τα νέα.
@@ -49,13 +49,13 @@ export function WhatsAppJoin() {
                             </div>
                             <div className="shrink-0">
                                 <Link
-                                    href={whatsappLink}
+                                    href={ViberLink}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-base font-semibold text-emerald-600 shadow-xl shadow-black/20 transition hover:-translate-y-0.5 hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-emerald-500 focus-visible:ring-white"
                                 >
                                     <MessageCircle className="h-5 w-5" />
-                                    Join στο WhatsApp
+                                    Join στο Viber
                                 </Link>
                             </div>
                         </div>
@@ -64,14 +64,14 @@ export function WhatsAppJoin() {
             </section>
 
             <Link
-                href={whatsappLink}
+                href={ViberLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="fixed bottom-6 right-4 z-40 flex items-center gap-2 rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-emerald-500/40 transition hover:translate-y-0.5 hover:bg-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-emerald-500 md:hidden"
-                aria-label="Join στο WhatsApp"
+                aria-label="Join στο Viber"
             >
                 <MessageCircle className="h-4 w-4" />
-                WhatsApp
+                Viber
             </Link>
         </>
     );

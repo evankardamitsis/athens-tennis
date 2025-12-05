@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Facebook, Instagram, Mail } from "lucide-react";
@@ -27,8 +28,14 @@ export function Footer() {
                 className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:px-8 md:grid-cols-4"
             >
                 <div className="space-y-4">
-                    <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-emerald-500 text-lg font-bold text-slate-900">
-                        AT
+                    <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/10 p-2 ring-1 ring-white/20">
+                        <Image
+                            src="/athenstennis-logo.png"
+                            alt="AthensTennis logo"
+                            width={40}
+                            height={40}
+                            className="object-contain"
+                        />
                     </span>
                     <h2 id="footer-heading" className="text-xl font-semibold">
                         AthensTennis

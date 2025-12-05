@@ -26,11 +26,9 @@ export function Hero() {
                         🟢 AthensTennis League
                     </span>
                     <h1 className="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-                        Το ερασιτεχνικό πρωτάθλημα τένις της Αθήνας.
-                    </h1>
+                        Το πρωτάθλημα της πόλης μας.                    </h1>
                     <p className="text-lg leading-relaxed text-slate-600 sm:text-xl">
-                        Δήλωσε συμμετοχή, κλείσε αγώνες με παίκτες κοντά στο επίπεδό σου και
-                        ανέβα στο ranking.
+                        Παίξε περισσότερο, οργανωμένα και χωρίς άγχος. Το πρωτάθλημα που κάνει το τένις εύκολο και απολαυστικό.
                     </p>
                     <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
                         <Link
@@ -79,7 +77,7 @@ export function Hero() {
                             Community
                         </p>
                         <p className="mt-3 text-base text-slate-600">
-                            WhatsApp group για γρήγορες συνεννοήσεις, events και mini leagues.
+                            Viber group για γρήγορες συνεννοήσεις, events και mini leagues.
                         </p>
                     </div>
                 </motion.div>
