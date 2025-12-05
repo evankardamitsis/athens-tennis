@@ -71,7 +71,7 @@ export function Navbar() {
           <span className="text-primary-500">AthensTennis</span>
         </Link>
 
-        <div className="hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex">
+        <div className="hidden items-center gap-8 text-md font-medium text-slate-600 md:flex">
           {navLinks.map((item) => (
             <Link
               key={item.href}
