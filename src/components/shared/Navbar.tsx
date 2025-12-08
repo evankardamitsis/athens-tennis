@@ -53,8 +53,8 @@ export function Navbar() {
           }`}
       >
         <Link
-          href="#top"
-          className="flex items-center gap-3 text-lg font-semibold tracking-tight text-foreground"
+          href="/"
+          className="flex items-center gap-3 text-lg font-semibold tracking-tight text-primary-500"
           onClick={closeMenu}
           aria-label="Αρχική AthensTennis"
         >

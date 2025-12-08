@@ -33,14 +33,14 @@ export function Facilities() {
               </div>
               <h2
                 id="facilities-heading"
-                className="text-3xl font-semibold text-foreground sm:text-4xl"
+                className="text-3xl font-semibold text-primary-500 sm:text-4xl"
               >
                 {t("title")}
               </h2>
               <p className="text-base text-slate-700 sm:text-lg">
                 {t("description")}
               </p>
-              <p className="text-lg font-semibold text-foreground">
+              <p className="text-lg font-semibold text-primary-500">
                 {t("subtitle")}
               </p>
             </motion.div>

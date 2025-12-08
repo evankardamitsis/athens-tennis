@@ -67,7 +67,7 @@ export function Footer() {
                                 </li>
                                 <li>
                                     <Link
-                                        href="#rules"
+                                        href="/rules"
                                         className="transition hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-500"
                                     >
                                         {t("useful.regulations")}

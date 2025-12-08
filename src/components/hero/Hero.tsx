@@ -61,7 +61,7 @@ export function Hero() {
                                         {t("ctaPrimary")}
                                     </a>
                                     <Link
-                                        href="#how-it-works"
+                                        href="/rules"
                                         className="inline-flex items-center justify-center rounded-[99px] border border-[#D4DE26] bg-transparent px-8 py-3 text-base font-semibold text-[#0B3F63]! transition hover:bg-accent-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2"
                                     >
                                         {t("ctaSecondary")}

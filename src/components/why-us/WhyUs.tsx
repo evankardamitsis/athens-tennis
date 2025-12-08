@@ -53,7 +53,7 @@ export function WhyUs() {
           <motion.h2
             id="features-heading"
             variants={fadeInUp}
-            className="text-3xl font-semibold text-foreground sm:text-4xl"
+            className="text-3xl font-semibold text-primary-500 sm:text-4xl"
           >
             {t("title")}
           </motion.h2>
@@ -80,7 +80,7 @@ export function WhyUs() {
               variants={fadeInUp}
               className="rounded-3xl bg-[#F2F2EE] px-6 py-8 text-center shadow-sm"
             >
-              <h3 className="text-lg font-semibold text-foreground">{title}</h3>
+              <h3 className="text-lg font-semibold text-primary-500">{title}</h3>
               <p className="mt-3 text-md text-slate-700 leading-relaxed">
                 {description}
               </p>

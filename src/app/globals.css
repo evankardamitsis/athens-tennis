@@ -181,30 +181,30 @@
   --color-card: var(--card);
   
   /* Primary Color Scale */
-  --color-primary-50: var(--color-primary-50);
-  --color-primary-100: var(--color-primary-100);
-  --color-primary-200: var(--color-primary-200);
-  --color-primary-300: var(--color-primary-300);
-  --color-primary-400: var(--color-primary-400);
-  --color-primary-500: var(--color-primary-500);
-  --color-primary-600: var(--color-primary-600);
-  --color-primary-700: var(--color-primary-700);
-  --color-primary-800: var(--color-primary-800);
-  --color-primary-900: var(--color-primary-900);
-  --color-primary-950: var(--color-primary-950);
+  --color-primary-50: #e6f0f5;
+  --color-primary-100: #b3d1e0;
+  --color-primary-200: #80b2cb;
+  --color-primary-300: #4d93b6;
+  --color-primary-400: #1a74a1;
+  --color-primary-500: #0B3F63;
+  --color-primary-600: #093250;
+  --color-primary-700: #07253d;
+  --color-primary-800: #05182a;
+  --color-primary-900: #030b17;
+  --color-primary-950: #010508;
   
   /* Accent Color Scale */
-  --color-accent-50: var(--color-accent-50);
-  --color-accent-100: var(--color-accent-100);
-  --color-accent-200: var(--color-accent-200);
-  --color-accent-300: var(--color-accent-300);
-  --color-accent-400: var(--color-accent-400);
-  --color-accent-500: var(--color-accent-500);
-  --color-accent-600: var(--color-accent-600);
-  --color-accent-700: var(--color-accent-700);
-  --color-accent-800: var(--color-accent-800);
-  --color-accent-900: var(--color-accent-900);
-  --color-accent-950: var(--color-accent-950);
+  --color-accent-50: #f9fce6;
+  --color-accent-100: #f0f5b3;
+  --color-accent-200: #e7ee80;
+  --color-accent-300: #dee74d;
+  --color-accent-400: #d5e01a;
+  --color-accent-500: #D4DE26;
+  --color-accent-600: #aab21e;
+  --color-accent-700: #808617;
+  --color-accent-800: #565a0f;
+  --color-accent-900: #2c2e08;
+  --color-accent-950: #141501;
   
   /* Neutral Color Scale */
   --color-neutral-50: var(--color-neutral-50);

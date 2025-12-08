@@ -21,7 +21,7 @@ export function ProblemSolve() {
           <motion.h2
             id="problem-solve-heading"
             variants={fadeInUp}
-            className="text-3xl font-semibold text-foreground sm:text-4xl"
+            className="text-3xl font-semibold text-primary-500 sm:text-4xl"
           >
             Problem Solve
           </motion.h2>

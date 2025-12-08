@@ -111,7 +111,7 @@ export default async function LocaleLayout({
         </Script>
       </head>
       <body
-        className={`${ubuntu.variable} antialiased bg-background text-foreground`}
+        className={`${ubuntu.variable} antialiased bg-background text-primary-500`}
       >
         <NextIntlClientProvider messages={messages}>
           {children}

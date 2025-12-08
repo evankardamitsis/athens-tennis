@@ -1,0 +1,1 @@
+export { RulesHero } from "./RulesHero";

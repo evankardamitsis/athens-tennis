@@ -265,5 +265,17 @@
     },
     "copyright": "©2025 AthensTennis. All rights reserved.",
     "credits": "Designed & Developed by Below The Fold"
+  },
+  "rules": {
+    "title": "Regulations",
+    "subtitle": "",
+    "content": "The championship regulations will be added soon.",
+    "hero": {
+      "branding": "AthensTennis",
+      "title": "The championship rules",
+      "description1": "Play organized and without commitment whenever you want.",
+      "description2": "The championship that makes tennis easy and enjoyable.",
+      "navItems": ["Categories", "Championship", "Point System"]
+    }
   }
 }

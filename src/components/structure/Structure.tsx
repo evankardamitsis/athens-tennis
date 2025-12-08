@@ -1,5 +1,6 @@
 "use client";
 
+import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
@@ -44,7 +45,7 @@ export function Structure() {
           </div>
           <h2
             id="structure-heading"
-            className="mt-4 text-3xl font-semibold text-foreground sm:text-4xl"
+            className="mt-4 text-3xl font-semibold text-primary-500 sm:text-4xl"
           >
             {t("title")}
           </h2>
@@ -105,13 +106,13 @@ export function Structure() {
 
         <div className="mt-6 flex flex-col items-center gap-4 text-center">
           <p className="text-xs text-slate-600 sm:text-sm">{t("note")}</p>
-          <a
-            href="#how-it-works-details"
-            className="inline-flex items-center gap-2 rounded-full border border-accent-400  px-5 py-3 text-md font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+          <Link
+            href="/rules"
+            className="inline-flex items-center gap-2 text-primary-500! rounded-full border border-accent-400  px-5 py-3 text-md font-semibold shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
           >
             {t("cta")}
             <ChevronRight className="h-4 w-4" aria-hidden />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

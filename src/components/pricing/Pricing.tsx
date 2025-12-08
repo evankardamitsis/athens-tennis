@@ -64,12 +64,12 @@ export function Pricing() {
                                 <motion.div
                                     key={plan.key}
                                     variants={fadeInUp}
-                                    className={`relative flex flex-col rounded-2xl border bg-[#F4F4F414] p-6 shadow-lg ${plan.key === "p100" ? "border-accent-400" : ""
+                                    className={`relative flex flex-col rounded-2xl bg-[#F4F4F414] p-6 shadow-lg ${plan.key === "p100" ? "border border-accent-400" : ""
                                         }`}
                                 >
                                     {/* Discount Badge */}
                                     {plan.hasDiscount && planData.discount && (
-                                        <div className="absolute right-4 top-4 rounded-lg bg-[#D4DE26] px-3 py-1 text-sm font-bold text-primary-500">
+                                        <div className="absolute right-4 top-4 rounded-lg bg-accent-500 px-3 py-1 text-sm font-bold text-primary-500">
                                             {planData.discount}
                                         </div>
                                     )}
@@ -143,7 +143,7 @@ export function Pricing() {
                                             href="https://athenstennis.gr/athens-tennis/news-blog"
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="inline-flex w-full items-center justify-center rounded-full bg-[#D4DE26] px-6 py-3 text-base font-semibold text-[#0B3F63]! transition hover:bg-accent-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2"
+                                            className="inline-flex w-full items-center justify-center rounded-full bg-accent-500 px-6 py-3 text-base font-semibold text-primary-500! transition hover:bg-accent-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2"
                                         >
                                             {planData.cta}
                                         </a>
@@ -160,7 +160,7 @@ export function Pricing() {
                     >
                         <Link
                             href="#faq"
-                            className="underline decoration-white underline-offset-4 transition hover:text-[#D4DE26]"
+                            className="underline decoration-white underline-offset-4 transition hover:text-accent-500"
                         >
                             {t.rich("footer", {
                                 bold: (chunks) => (

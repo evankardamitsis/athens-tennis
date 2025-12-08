@@ -108,7 +108,7 @@ export function Rankings() {
                         <div className="flex justify-center -mt-6">
                             <a
                                 href="#how-it-works"
-                                className="inline-flex items-center justify-center rounded-full border border-[#D4DE26] px-6 py-3 text-base font-semibold text-primary-500 shadow-sm transition hover:bg-[#D4DE26]/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
+                                className="inline-flex items-center justify-center rounded-full border border-accent-500 px-6 py-3 text-base font-semibold text-primary-500! shadow-sm transition hover:bg-accent-500/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
                             >
                                 {t("cta")}
                             </a>
