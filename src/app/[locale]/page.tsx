@@ -1,7 +1,7 @@
 import { Navbar } from "@/components/shared";
 import { Hero } from "@/components/hero";
 import { HeroSecondary } from "@/components/hero";
-import { HowItWorks } from "@/components/structure";
+import { Structure } from "@/components/structure/Structure";
 import { Facilities } from "@/components/facilities";
 import { Features } from "@/components/why-us";
 import { CTASection } from "@/components/registration-banner";
@@ -23,7 +23,7 @@ export default function Home() {
       <main className="relative mx-auto flex max-w-[1440px] flex-col overflow-hidden pt-24">
         <Hero />
         <HeroSecondary />
-        <HowItWorks />
+        <Structure />
         <Facilities />
         <Features />
         <CTASection />

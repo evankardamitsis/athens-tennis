@@ -14,7 +14,7 @@
   },
   "hero": {
     "badge": "AthensTennis",
-    "title": "The Championship of Our City",
+    "title": "Athens City Championship",
     "description": "Play <bold>organized and without commitment</bold> whenever you want. The championship that makes tennis easy and enjoyable.",
     "ctaPrimary": "Register",
     "ctaSecondary": "See how it works",
@@ -36,28 +36,26 @@
     }
   },
   "structure": {
-    "title": "How it works",
-    "description": "Enter the AthensTennis experience in five simple steps.",
-    "step1": {
-      "title": "Registration",
-      "description": "Create your profile & level."
+    "badge": "Championship",
+    "title": "Championship Structure",
+    "description": "Every match <bold>matters</bold>. Every win brings you closer <bold>to the top!</bold>",
+    "phase1": {
+      "label": "Phase 1",
+      "title": "Regular Season",
+      "period": "September \u2192 May"
     },
-    "step2": {
-      "title": "Placement",
-      "description": "Enter a division."
+    "phase2": {
+      "label": "Phase 2",
+      "title": "Knockouts*",
+      "period": "June"
     },
-    "step3": {
-      "title": "Schedule match",
-      "description": "Find time/court with your opponent."
+    "phase3": {
+      "label": "Phase 3",
+      "title": "Finals",
+      "period": "July"
     },
-    "step4": {
-      "title": "Play & report score",
-      "description": "Quick entry, confirmation."
-    },
-    "step5": {
-      "title": "Climb the ranking",
-      "description": "Win positions and enter the Playoffs."
-    }
+    "note": "*Everyone joins the Knockouts. Requirement: 15 matches in the Regular Season.",
+    "cta": "Read details"
   },
   "whyUs": {
     "badge": "Why AthensTennis",
@@ -123,6 +121,23 @@
     "description": "Schedule friendly matches, find opponents, learn the news first.",
     "note": "We respect fair play & respect rules.",
     "cta": "Join Viber"
+  },
+  "facilities": {
+    "badge": "Facilities",
+    "title": "Available facility options",
+    "description": "You choose for every match in the Regular Season where you want to play among the available options.",
+    "subtitle": "The options for the 2025-2026 season are:",
+    "logosAlt": "Logos of available facilities",
+    "areas": [
+      "Χαλάνδρι",
+      "Μαρούσι",
+      "Καβούρι",
+      "Παλλήνη",
+      "Βριλήσσια",
+      "Βάρη",
+      "Εκάλη",
+      "Μελίσσια"
+    ]
   },
   "faq": {
     "title": "Frequently Asked Questions"
