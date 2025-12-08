@@ -51,10 +51,20 @@ export function RulesHero() {
                         className="flex flex-wrap gap-3"
                     >
                         {navItems.map((item, index) => {
-                            const anchorId = item
-                                .toLowerCase()
-                                .replace(/\s+/g, "-")
-                                .replace(/[^a-z0-9-]/g, "");
+                            // Map Greek text to anchor IDs
+                            const anchorMap: Record<string, string> = {
+                                "Κατηγορίες": "categories",
+                                "Categories": "categories",
+                                "Πρωτάθλημα": "structure-detailed",
+                                "Championship": "structure-detailed",
+                                "Point System": "point-system",
+                            };
+                            const anchorId =
+                                anchorMap[item] ||
+                                item
+                                    .toLowerCase()
+                                    .replace(/\s+/g, "-")
+                                    .replace(/[^a-z0-9-]/g, "");
                             return (
                                 <motion.a
                                     key={index}

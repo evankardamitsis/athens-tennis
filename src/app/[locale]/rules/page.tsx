@@ -1,7 +1,8 @@
 import { Navbar } from "@/components/shared";
 import { Footer } from "@/components/footer";
-import { RulesHero } from "@/components/rules/RulesHero";
+import { RulesHero, Categories, PointSystem } from "@/components/rules";
 import { routing } from "@/i18n/routing";
+import { StructureDetailed } from "@/components/structure";
 
 export function generateStaticParams() {
     return routing.locales.map((locale) => ({ locale }));
@@ -19,6 +20,9 @@ export default async function RulesPage({
             <Navbar />
             <main className="relative mx-auto flex max-w-[1440px] flex-col overflow-hidden pt-24">
                 <RulesHero />
+                <Categories />
+                <StructureDetailed />
+                <PointSystem />
             </main>
             <Footer />
         </div>

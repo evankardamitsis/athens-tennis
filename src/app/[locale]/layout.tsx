@@ -22,11 +22,11 @@ export function generateMetadata(): Metadata {
     metadataBase: new URL(siteUrl),
     title: "AthensTennis — Ερασιτεχνικό Πρωτάθλημα Τένις Αθήνας",
     description:
-      "Δήλωσε συμμετοχή, παίξε ισορροπημένους αγώνες, δες live rankings και μπες στα Playoffs.",
+      "Το AthensTennis είναι το πρώτο ερασιτεχνικό πρωτάθλημα τένις στην Αθήνα — για όλους όσους θέλουν να παίζουν αγώνες εύκολα και σε ένα θετικό, φιλικό περιβάλλον.",
     openGraph: {
       title: "AthensTennis — Ερασιτεχνικό Πρωτάθλημα Τένις Αθήνας",
       description:
-        "Δήλωσε συμμετοχή, παίξε ισορροπημένους αγώνες, δες live rankings και μπες στα Playoffs.",
+        "Το AthensTennis είναι το πρώτο ερασιτεχνικό πρωτάθλημα τένις στην Αθήνα — για όλους όσους θέλουν να παίζουν αγώνες εύκολα και σε ένα θετικό, φιλικό περιβάλλον.",
       url: siteUrl,
       siteName: "AthensTennis",
       locale: "el_GR",
@@ -36,7 +36,7 @@ export function generateMetadata(): Metadata {
           url: ogImage,
           width: 1200,
           height: 630,
-          alt: "AthensTennis courts and community",
+          alt: "AthensTennis tennis championship and community",
         },
       ],
     },
@@ -44,7 +44,7 @@ export function generateMetadata(): Metadata {
       card: "summary_large_image",
       title: "AthensTennis — Ερασιτεχνικό Πρωτάθλημα Τένις Αθήνας",
       description:
-        "Δήλωσε συμμετοχή, παίξε ισορροπημένους αγώνες, δες live rankings και μπες στα Playoffs.",
+        "Το AthensTennis είναι το πρώτο ερασιτεχνικό πρωτάθλημα τένις στην Αθήνα — για όλους όσους θέλουν να παίζουν αγώνες εύκολα και σε ένα θετικό, φιλικό περιβάλλον.",
       images: [ogImage],
     },
     alternates: {
@@ -64,7 +64,7 @@ const organizationJsonLd = {
   name: "AthensTennis",
   url: siteUrl,
   description:
-    "Ερασιτεχνικό πρωτάθλημα τένις στην Αθήνα με ισορροπημένα ζευγαρώματα και live rankings.",
+    "Το AthensTennis είναι το πρώτο ερασιτεχνικό πρωτάθλημα τένις στην Αθήνα — για όλους όσους θέλουν να παίζουν αγώνες εύκολα και σε ένα θετικό, φιλικό περιβάλλον.",
   logo: `${siteUrl}${ogImage}`,
   sameAs: [
     "https://instagram.com/athenstennis",

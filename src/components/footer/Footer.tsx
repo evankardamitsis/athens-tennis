@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Facebook, Instagram, Mail } from "lucide-react";
@@ -84,20 +84,20 @@ export function Footer() {
                             <ul className="space-y-2 text-sm text-[#E6E7D3]">
                                 <li>
                                     <Link
-                                        href="/privacy"
+                                        href="/privacy-policy"
                                         className="transition hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-500"
                                     >
                                         {t("legal.privacy")}
                                     </Link>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <Link
                                         href="/terms"
                                         className="transition hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-500"
                                     >
                                         {t("legal.terms")}
                                     </Link>
-                                </li>
+                                </li> */}
                             </ul>
                         </motion.div>
 
@@ -150,12 +150,12 @@ export function Footer() {
                     >
                         <p>{t("copyright")}</p>
                         <p>
-                            <span>Designed & Developed by </span>
+                            <span>Designed & Developed with 😍 by </span>
                             <a
                                 href="https://www.belowthefold.gr/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="font-bold transition hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-500"
+                                className="font-bold transition hover:text-white! text-accent-500! focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-500"
                             >
                                 Below The Fold
                             </a>

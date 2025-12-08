@@ -55,7 +55,41 @@
       "period": "July"
     },
     "note": "*Everyone joins the Knockouts. Requirement: 15 matches in the Regular Season.",
-    "cta": "Read details"
+    "cta": "Read details",
+    "detailed": {
+      "phase1": {
+        "label": "Phase 1",
+        "title": "Regular Season",
+        "intro": "It is the Regular duration of the Championship and each athlete can play as many games as they want.",
+        "bullets": [
+          "When a player exceeds 15 games (in each category) from the 16th game onwards, the points that will count in the Ranking will be their best 15 results from the total games they have played.",
+          "Your Opponent in each Match is determined by the Organization of the Championship",
+          "You choose each time which sports facility you want the match to take place at and the time that suits you.",
+          "In each of your matches, depending on the opponent's ATRP & the result, you earn points and thus your position (Rank) in the Ranking is formed."
+        ],
+        "link": "See detailed scoring system in the Point System section"
+      },
+      "phase2": {
+        "label": "Phase 2",
+        "title": "Knockouts",
+        "intro": "All players participate, regardless of their finishing position.",
+        "bullets": [
+          "The first four of the Ranking in the Regular Season qualify directly for the Finals.",
+          "Each player, depending on their position in the Ranking, is called to compete against a player who is in the same 16-team bracket in the Ranking or closest to them (up or down).",
+          "The matches are Knockout until only the four best in each category remain to qualify for the Finals."
+        ]
+      },
+      "phase3": {
+        "label": "Phase 3",
+        "title": "Finals (Top 8)",
+        "intro": "The first four who finished in the Regular Season and the four who will emerge from the Knockouts will compete for the title of Champion with the following Format:",
+        "bullets": [
+          "Two groups of four will be created",
+          "The players of each group will play each other",
+          "The top two from each group will qualify for the semi-finals, from which the grand final will emerge."
+        ]
+      }
+    }
   },
   "whyUs": {
     "badge": "Why join",
@@ -276,6 +310,43 @@
       "description1": "Play organized and without commitment whenever you want.",
       "description2": "The championship that makes tennis easy and enjoyable.",
       "navItems": ["Categories", "Championship", "Point System"]
+    },
+    "categories": {
+      "badge": "Categories",
+      "title": "The championship is divided into 3 categories:",
+      "atrpTitle": "What is ATRP",
+      "atrpDescription": "ATRP is the Athens Tennis evaluation system that assigns a level to each player. The player's level is evaluated by their performance in a series of tennis matches & changes if needed over time."
+    },
+    "pointSystem": {
+      "badge": "Point System",
+      "title": "In every match you get points that are added to your ranking.",
+      "subtitle": "More specifically, the points you get are:",
+      "points": [
+        {
+          "text": "50p for your participation (valid for only 15 matches)"
+        },
+        {
+          "text": "150p if you win against a player with ATRP 1.5"
+        },
+        {
+          "text": "350p if you win against a player with ATRP 2.0"
+        },
+        {
+          "text": "550p if you win against a player with ATRP 2.5"
+        },
+        {
+          "text": "1550p if you win against a player with ATRP 3.0"
+        },
+        {
+          "text": "2150p if you win against a player with ATRP 3.5"
+        },
+        {
+          "text": "2650p if you win against a player with ATRP 4.0"
+        },
+        {
+          "text": "3000p if you win against a player with ATRP 4.5"
+        }
+      ]
     }
   }
 }
