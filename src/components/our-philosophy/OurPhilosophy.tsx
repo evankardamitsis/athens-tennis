@@ -1,75 +1,108 @@
 "use client";
 
+import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer } from "@/components/shared";
 
-const testimonials = [
-    {
-        quote: "Η καλύτερη αφορμή να παίζω κάθε εβδομάδα.",
-        name: "Γιάννης",
-        level: "4.0",
-    },
-    {
-        quote: "Οργάνωση, ισορροπημένα ματς, τρομερό fun.",
-        name: "Μαρία",
-        level: "3.5",
-    },
-    {
-        quote: "Ανέβασα επίπεδο μέσα σε μία σεζόν.",
-        name: "Νίκος",
-        level: "3.0",
-    },
-];
-
 export function OurPhilosophy() {
+    const t = useTranslations("ourPhilosophy");
+    const principles = t.raw("principles") as string[];
+
     return (
-        <section id="our-philosophy" className="bg-linear-to-b from-white to-emerald-50/60 py-16 sm:py-20">
+        <section
+            id="our-philosophy"
+            className="relative py-16 sm:py-20 rounded-[40px]"
+            style={{
+                background:
+                    "linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%)",
+            }}
+        >
             <div className="mx-auto max-w-[1440px] px-5">
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true, amount: 0.3 }}
+                    viewport={{ once: true, amount: 0.2 }}
                     variants={staggerContainer}
-                    className="flex flex-col items-center gap-12 text-center"
+                    className="grid gap-12 lg:grid-cols-[0.45fr_0.55fr] lg:items-center"
                 >
-                    <motion.h2
-                        variants={fadeInUp}
-                        className="text-3xl font-semibold text-foreground sm:text-4xl"
-                    >
-                        Τι λέει η κοινότητα
-                    </motion.h2>
-                    <motion.div
-                        variants={staggerContainer}
-                        className="grid w-full gap-6 sm:grid-cols-3"
-                    >
-                        {testimonials.map(({ quote, name, level }) => (
-                            <motion.figure
-                                key={name}
-                                variants={fadeInUp}
-                                className="flex h-full flex-col rounded-3xl border border-slate-100 bg-white p-6 text-left shadow-lg shadow-emerald-500/10"
-                            >
-                                <blockquote className="flex-1 text-base text-slate-600">
-                                    “{quote}”
-                                </blockquote>
-                                <figcaption className="mt-6 flex items-center gap-3">
-                                    <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-emerald-100 text-sm font-semibold text-emerald-700">
-                                        {name.slice(0, 1)}
-                                    </div>
-                                    <div>
-                                        <p className="text-sm font-semibold text-foreground">
-                                            {name}
-                                        </p>
-                                        <p className="text-xs font-medium uppercase tracking-wide text-slate-500">
-                                            {level}
-                                        </p>
-                                    </div>
-                                </figcaption>
-                            </motion.figure>
-                        ))}
+                    {/* Left Side - Image */}
+                    <motion.div variants={fadeInUp} className="relative">
+                        <Image
+                            src="/rankings.png"
+                            alt="Tennis player in action"
+                            width={500}
+                            height={700}
+                            className="h-full w-full object-contain"
+                            priority
+                        />
                     </motion.div>
+
+                    {/* Right Side - Content */}
+                    <motion.div variants={fadeInUp} className="space-y-6 p-12">
+                        {/* Badge */}
+                        <div className="inline-flex w-fit items-center rounded-full bg-[#0B3F631F] px-4 py-2 text-sm font-semibold text-primary-500">
+                            {t("badge")}
+                        </div>
+
+                        {/* Title */}
+                        <h2 className="text-3xl font-bold leading-tight text-primary-500 sm:text-4xl lg:text-5xl">
+                            {t("title")}
+                        </h2>
+
+                        {/* Description */}
+                        <p className="text-base leading-relaxed text-neutral-700 sm:text-lg">
+                            {t("description")}
+                        </p>
+
+                        {/* Subheading */}
+                        <h3 className="text-lg font-semibold text-primary-500 sm:text-xl">
+                            {t("subheading")}
+                        </h3>
+
+                        {/* Principles List */}
+                        <div className="space-y-3">
+                            {principles.map((principle, index) => (
+                                <motion.div
+                                    key={index}
+                                    variants={fadeInUp}
+                                    className="flex items-center gap-3 rounded-2xl bg-[#F2F2EE] px-4 py-3"                                >
+                                    <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full">
+                                        <Image
+                                            src="/check-circle-svgrepo-com (1) 1.svg"
+                                            alt=""
+                                            width={20}
+                                            height={20}
+                                            className="h-5 w-5"
+                                            aria-hidden
+                                        />
+                                    </div>
+                                    <p className="text-sm font-bold text-primary-500 sm:text-base">
+                                        {principle}
+                                    </p>
+                                </motion.div>
+                            ))}
+                        </div>
+                    </motion.div>
+                </motion.div>
+
+                {/* Bottom Section - Separator and Tagline */}
+                <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.3 }}
+                    variants={fadeInUp}
+                    className="mt-12 space-y-6"
+                >
+                    {/* Dotted Separator */}
+                    <div className="border-t-2 border-dashed border-primary-500 opacity-30" />
+
+                    {/* Tagline */}
+                    <p className="text-center text-lg font-semibold text-primary-500 sm:text-xl">
+                        {t("tagline")}
+                    </p>
                 </motion.div>
             </div>
         </section>
     );
 }
-

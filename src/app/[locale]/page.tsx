@@ -6,7 +6,7 @@ import { Facilities } from "@/components/facilities";
 import { WhyUs } from "@/components/why-us/WhyUs";
 import { RegistrationBanner } from "@/components/registration-banner";
 import { OurPhilosophy } from "@/components/our-philosophy";
-import { CalendarEmbed } from "@/components/rankings";
+import { Rankings } from "@/components/rankings";
 import { Pricing } from "@/components/pricing";
 import { LiveStats } from "@/components/live-stats";
 import { ViberJoin } from "@/components/viber-group";
@@ -27,7 +27,7 @@ export default function Home() {
         <WhyUs />
         <RegistrationBanner />
         <OurPhilosophy />
-        <CalendarEmbed />
+        <Rankings />
         <Pricing />
         <LiveStats />
         <ViberJoin />

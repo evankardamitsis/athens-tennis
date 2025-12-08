@@ -77,7 +77,7 @@ export function RegistrationBanner() {
                                 <div className="flex justify-center">
                                     <a
                                         href="#rules"
-                                        className="text-sm font-semibold text-accent-400 underline decoration-accent-400 underline-offset-4 transition hover:text-accent-300"
+                                        className="text-sm font-semibold text-[#D4DE26]! underline decoration-[#D4DE26] underline-offset-4 transition hover:text-accent-300"
                                     >
                                         {t("ctaSecondary")}
                                     </a>

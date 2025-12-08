@@ -1,1 +1,1 @@
-export { CalendarEmbed } from "./CalendarEmbed";
+export { Rankings } from "./Rankings";

@@ -100,6 +100,20 @@
       }
     ]
   },
+  "rankingsSection": {
+    "badge": "Rankings",
+    "title": "Your progress map",
+    "description": "Your ranking shows clearly where you stand in the championship.",
+    "items": [
+      "Categories with level tiers",
+      "Continuous updates",
+      "Fair and clear structure",
+      "Motivation to improve each week"
+    ],
+    "taglineTitle": "No complex stats.",
+    "taglineSubtitle": "It’s your place in the standings — and your progress through the year.",
+    "cta": "See how it works"
+  },
   "pricing": {
     "title": "Choose the package that suits you",
     "description": "Flexibility to try the experience or play full season.",
@@ -147,6 +161,19 @@
       "Εκάλη",
       "Μελίσσια"
     ]
+  },
+  "ourPhilosophy": {
+    "badge": "Our Philosophy",
+    "title": "Stable, positive environment",
+    "description": "AthensTennis operates with a simple logic: to make amateur tennis in the city more organized, higher quality, and more enjoyable.",
+    "subheading": "We support:",
+    "principles": [
+      "clear rules",
+      "fair play",
+      "athleisure aesthetics and calm competitiveness",
+      "a championship that \"flows\" without stress"
+    ],
+    "tagline": "Here the game has rhythm, consistency, and character."
   },
   "faq": {
     "title": "Frequently Asked Questions"
