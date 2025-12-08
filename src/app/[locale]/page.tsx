@@ -3,8 +3,8 @@ import { Hero } from "@/components/hero";
 import { HeroSecondary } from "@/components/hero";
 import { Structure } from "@/components/structure/Structure";
 import { Facilities } from "@/components/facilities";
-import { Features } from "@/components/why-us";
-import { CTASection } from "@/components/registration-banner";
+import { WhyUs } from "@/components/why-us/WhyUs";
+import { RegistrationBanner } from "@/components/registration-banner";
 import { ProblemSolve } from "@/components/problem-solve";
 import { Testimonials } from "@/components/our-philosophy";
 import { CalendarEmbed } from "@/components/rankings";
@@ -25,8 +25,8 @@ export default function Home() {
         <HeroSecondary />
         <Structure />
         <Facilities />
-        <Features />
-        <CTASection />
+        <WhyUs />
+        <RegistrationBanner />
         <ProblemSolve />
         <Testimonials />
         <CalendarEmbed />

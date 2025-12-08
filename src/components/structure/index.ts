@@ -1,1 +1,1 @@
-export { HowItWorks } from "./Structure";
+export { Structure } from "./Structure";

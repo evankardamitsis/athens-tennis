@@ -66,7 +66,7 @@ export function HeroSecondary() {
                     {/* Main Heading */}
                     <motion.h2
                         variants={fadeInUp}
-                        className="mb-4 text-3xl font-bold text-[#E6E7D3] sm:text-4xl lg:text-5xl"
+                        className="mb-4 text-3xl font-bold text-[#E6E7D3] sm:text-4xl"
                     >
                         {t("title")}
                     </motion.h2>
@@ -76,7 +76,13 @@ export function HeroSecondary() {
                         variants={fadeInUp}
                         className="mx-auto mb-6 max-w-3xl text-base leading-relaxed text-[#E6E7D3]/80 sm:text-lg"
                     >
-                        {t("description")}
+                        {t.rich("description", {
+                            bold: (chunks) => (
+                                <span className="font-semibold text-[#E6E7D3]">
+                                    {chunks}
+                                </span>
+                            ),
+                        })}
                     </motion.p>
 
                     {/* Sub-heading */}

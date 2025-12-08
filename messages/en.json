@@ -26,7 +26,7 @@
     "communityDesc": "Viber group for quick coordination, events and mini leagues.",
     "secondary": {
       "title": "What is AthensTennis",
-      "description": "AthensTennis is the first amateur tennis championship in Athens — for all those who want to play matches easily and in a positive, friendly environment.",
+      "description": "AthensTennis is <bold>the first amateur tennis championship in Athens</bold> — for all those who want to play matches easily and in a positive, friendly environment.",
       "subheading": "Here you will find:",
       "features": {
         "matchesForAllLevels": "Matches for all levels",
@@ -58,38 +58,47 @@
     "cta": "Read details"
   },
   "whyUs": {
-    "badge": "Why AthensTennis",
-    "title": "Make your game better.",
-    "description": "From registration to Playoffs, our platform guides you every step of the way.",
+    "badge": "Why join",
+    "title": "Purely about the game",
+    "description": "Play <bold>organized</bold> and <bold>without stress</bold>. The championship that makes tennis easy and enjoyable.",
     "feature1": {
-      "title": "Smart matchmaking",
-      "description": "Play with opponents close to your level."
+      "title": "Play whenever you want",
+      "description": "We schedule your match on days and times that work for you."
     },
     "feature2": {
-      "title": "Easy organization",
-      "description": "Schedule matches with built-in scheduler."
+      "title": "Organization gets simpler",
+      "description": "Less coordination, fewer messages, less stress. The process is clear and practical."
     },
     "feature3": {
-      "title": "Live results",
-      "description": "Enter scores, see rankings in real time."
+      "title": "New challenges every week",
+      "description": "With opponents from your category, the game stays interesting and fair."
     },
     "feature4": {
-      "title": "Community",
-      "description": "Player network, group chats, mini events."
-    },
-    "feature5": {
-      "title": "Leaderboards",
-      "description": "By category, age, area."
-    },
-    "feature6": {
-      "title": "Prizes & Playoffs",
-      "description": "Trophies, gifts, finals."
+      "title": "Track your progress",
+      "description": "With categories and rankings, you always see where you stand and how you improve."
     }
   },
   "registrationBanner": {
-    "title": "Let's play.",
-    "description": "Book your spot for the next season and enter Athens' ranking.",
-    "cta": "Register"
+    "badge": "How it works",
+    "title": "Simply & clearly start with",
+    "highlight": "3 steps",
+    "note": "*Minimum participation in 3 matches to finalize your placement",
+    "ctaPrimary": "Start now",
+    "ctaSecondary": "See the rules",
+    "steps": [
+      {
+        "title": "Complete your registration",
+        "description": "Quick process in a few steps."
+      },
+      {
+        "title": "Enter the rankings",
+        "description": "We place you where you truly fit. *"
+      },
+      {
+        "title": "Play your first match",
+        "description": "Start matches right away with a steady schedule and clear rules."
+      }
+    ]
   },
   "pricing": {
     "title": "Choose the package that suits you",

@@ -14,7 +14,13 @@ export function Hero() {
             {/* Hero Main */}
             <div className="relative overflow-hidden py-16 pt-8 sm:py-20 lg:py-12 lg:pt-8">
                 <div className="mx-auto max-w-[1440px]">
-                    <div className="mx-5 rounded-[40px] bg-linear-to-br from-white via-white to-neutral-50 px-14 py-8 sm:py-12 lg:py-16">
+                    <div
+                        className="mx-5 rounded-[40px] px-14 py-8 sm:py-12 lg:py-16"
+                        style={{
+                            background:
+                                "linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%)",
+                        }}
+                    >
                         <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 lg:items-center">
                             {/* Left Column - Content */}
                             <motion.div
@@ -29,7 +35,7 @@ export function Hero() {
                                 </span>
 
                                 {/* Main Heading */}
-                                <h1 className="text-4xl font-bold leading-tight text-primary-500 sm:text-5xl lg:text-6xl">
+                                <h1 className="text-4xl font-bold leading-tight text-primary-500 sm:text-5xl ">
                                     {t("title")}
                                 </h1>
 
