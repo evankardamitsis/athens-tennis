@@ -248,22 +248,22 @@
     "title": "Με την υποστήριξη των:"
   },
   "footer": {
-    "description": "Το πρωτάθλημα τένις της Αθήνας. Ισορροπημένα ματς, live rankings, community.",
-    "links": {
-      "about": "Σχετικά",
-      "howItWorks": "Πώς λειτουργεί",
-      "pricing": "Τιμές",
-      "faq": "FAQ",
-      "contact": "Επικοινωνία"
-    },
-    "social": {
-      "instagram": "Instagram",
-      "facebook": "Facebook"
+    "description": "Στόχος μας να προσφέρουμε μια εμπειρία που σέβεται τον χρόνο, το επίπεδο και τις ανάγκες κάθε παίκτη — χωρίς υπερβολές, χωρίς δυσκολίες.",
+    "useful": {
+      "title": "ΧΡΗΣΙΜΑ",
+      "about": "About",
+      "regulations": "Κανονισμοί"
     },
     "legal": {
+      "title": "ΝΟΜΙΚΑ",
       "privacy": "Πολιτική Απορρήτου",
       "terms": "Όροι Χρήσης"
     },
-    "copyright": "© 2025 AthensTennis. Όλα τα δικαιώματα κατοχυρωμένα."
+    "contact": {
+      "title": "ΕΠΙΚΟΙΝΩΝΙΑ",
+      "email": "info@athenstennis.gr"
+    },
+    "copyright": "©2025 AthensTennis. All rights reserved.",
+    "credits": "Designed & Developed by Below The Fold"
   }
 }

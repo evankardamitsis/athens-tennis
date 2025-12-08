@@ -3,127 +3,166 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { Facebook, Instagram, Mail } from "lucide-react";
-import { fadeInUp } from "@/components/shared";
-
-const usefulLinks = [
-    { label: "About", href: "#top" },
-    { label: "Κανονισμός", href: "#faq" },
-    { label: "Privacy", href: "/privacy" },
-    { label: "Terms", href: "/terms" },
-];
+import { fadeInUp, staggerContainer } from "@/components/shared";
 
 export function Footer() {
+    const t = useTranslations("footer");
+
     return (
         <footer
             id="contact"
-            className="bg-slate-950 py-14 text-white"
+            className="relative pb-8 pt-12 text-[#E6E7D3] sm:pb-12 sm:pt-16"
             aria-labelledby="footer-heading"
         >
-            <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.2 }}
-                variants={fadeInUp}
-                className="mx-auto grid max-w-[1440px] gap-10 px-5 md:grid-cols-4"
-            >
-                <div className="space-y-4">
-                    <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/10 p-2 ring-1 ring-white/20">
-                        <Image
-                            src="/athenstennis-logo.png"
-                            alt="AthensTennis logo"
-                            width={40}
-                            height={40}
-                            className="object-contain"
-                        />
-                    </span>
-                    <h2 id="footer-heading" className="text-xl font-semibold">
-                        AthensTennis
-                    </h2>
-                    <p className="text-sm text-white/70">
-                        Φτιάχνουμε την πιο ζωντανή κοινότητα ερασιτεχνικού τένις στην
-                        Αθήνα.
-                    </p>
-                </div>
-                <div className="space-y-3">
-                    <h3 className="text-sm font-semibold uppercase tracking-wide text-white/60">
-                        Χρήσιμα
-                    </h3>
-                    <ul className="space-y-2 text-sm text-white/80">
-                        {usefulLinks.map((link) => (
-                            <li key={link.label}>
-                                <Link
-                                    href={link.href}
-                                    className="transition hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+            <div className="mx-auto max-w-[1440px] px-5">
+                <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.25 }}
+                    variants={staggerContainer}
+                    className="rounded-[40px] bg-primary-500 p-8 sm:p-12 lg:p-16"
+                >
+                    {/* Main Content - Four Columns */}
+                    <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr]">
+                        {/* Column 1 - Brand */}
+                        <motion.div variants={fadeInUp} className="space-y-4">
+                            {/* Logo + Brand Name */}
+                            <div className="flex items-center gap-3">
+                                <Image
+                                    src="/athens_tennis_icon.png"
+                                    alt="AthensTennis logo"
+                                    width={40}
+                                    height={40}
+                                    className="h-10 w-10 object-contain"
+                                />
+                                <h2
+                                    id="footer-heading"
+                                    className="text-xl font-semibold"
                                 >
-                                    {link.label}
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-                <div className="space-y-3">
-                    <h3 className="text-sm font-semibold uppercase tracking-wide text-white/60">
-                        Νομικά
-                    </h3>
-                    <ul className="space-y-2 text-sm text-white/80">
-                        <li>
-                            <Link
-                                href="/privacy"
-                                className="transition hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
-                            >
-                                Πολιτική Απορρήτου
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href="/terms"
-                                className="transition hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
-                            >
-                                Όροι Χρήσης
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
-                <div className="space-y-3">
-                    <h3 className="text-sm font-semibold uppercase tracking-wide text-white/60">
-                        Επικοινωνία
-                    </h3>
-                    <p className="flex items-center gap-2 text-sm text-white/80">
-                        <Mail className="h-4 w-4" aria-hidden="true" />
-                        <a
-                            href="mailto:hello@athenstennis.gr"
-                            className="underline-offset-4 hover:underline"
-                        >
-                            hello@athenstennis.gr
-                        </a>
-                    </p>
-                    <div className="flex gap-3">
-                        <Link
-                            href="https://instagram.com/athenstennis"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center justify-center rounded-full border border-white/20 p-2 text-white/80 transition hover:border-white hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
-                            aria-label="Instagram"
-                        >
-                            <Instagram className="h-5 w-5" aria-hidden="true" />
-                        </Link>
-                        <Link
-                            href="https://facebook.com/athenstennis"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center justify-center rounded-full border border-white/20 p-2 text-white/80 transition hover:border-white hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
-                            aria-label="Facebook"
-                        >
-                            <Facebook className="h-5 w-5" aria-hidden="true" />
-                        </Link>
+                                    AthensTennis
+                                </h2>
+                            </div>
+
+                            {/* Description */}
+                            <p className="text-sm leading-relaxed text-[#E6E7D3] sm:text-base">
+                                {t("description")}
+                            </p>
+                        </motion.div>
+
+                        {/* Column 2 - Useful Links */}
+                        <motion.div variants={fadeInUp} className="space-y-3">
+                            <h3 className="text-base font-semibold uppercase tracking-wide">
+                                {t("useful.title")}
+                            </h3>
+                            <ul className="space-y-2 text-sm text-[#E6E7D3]">
+                                <li>
+                                    <Link
+                                        href="#about"
+                                        className="transition hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-500"
+                                    >
+                                        {t("useful.about")}
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        href="#rules"
+                                        className="transition hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-500"
+                                    >
+                                        {t("useful.regulations")}
+                                    </Link>
+                                </li>
+                            </ul>
+                        </motion.div>
+
+                        {/* Column 3 - Legal */}
+                        <motion.div variants={fadeInUp} className="space-y-3">
+                            <h3 className="text-base font-semibold uppercase tracking-wide">
+                                {t("legal.title")}
+                            </h3>
+                            <ul className="space-y-2 text-sm text-[#E6E7D3]">
+                                <li>
+                                    <Link
+                                        href="/privacy"
+                                        className="transition hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-500"
+                                    >
+                                        {t("legal.privacy")}
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        href="/terms"
+                                        className="transition hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-500"
+                                    >
+                                        {t("legal.terms")}
+                                    </Link>
+                                </li>
+                            </ul>
+                        </motion.div>
+
+                        {/* Column 4 - Contact */}
+                        <motion.div variants={fadeInUp} className="space-y-3">
+                            <h3 className="text-base font-semibold uppercase tracking-wide">
+                                {t("contact.title")}
+                            </h3>
+                            <div className="space-y-3">
+                                {/* Email */}
+                                <p className="flex items-center gap-2 text-sm text-[#E6E7D3]">
+                                    <Mail className="h-4 w-4 shrink-0" aria-hidden="true" />
+                                    <a
+                                        href={`mailto:${t("contact.email")}`}
+                                        className="transition hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-500"
+                                    >
+                                        {t("contact.email")}
+                                    </a>
+                                </p>
+
+                                {/* Social Icons */}
+                                <div className="flex gap-3">
+                                    <Link
+                                        href="https://www.instagram.com/athens.tennis/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center justify-center rounded-full border border-white/20 p-2 text-[#E6E7D3] transition hover:border-white hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-500"
+                                        aria-label="Instagram"
+                                    >
+                                        <Instagram className="h-5 w-5" aria-hidden="true" />
+                                    </Link>
+                                    <Link
+                                        href="https://www.facebook.com/athenstennis.gr"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center justify-center rounded-full border border-white/20 p-2 text-[#E6E7D3] transition hover:border-white hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-500"
+                                        aria-label="Facebook"
+                                    >
+                                        <Facebook className="h-5 w-5" aria-hidden="true" />
+                                    </Link>
+                                </div>
+                            </div>
+                        </motion.div>
                     </div>
-                </div>
-            </motion.div>
-            <div className="mt-12 px-4 text-center text-xs text-white/50 sm:px-6 lg:px-8">
-                © {new Date().getFullYear()} AthensTennis. All rights reserved.
+
+                    {/* Bottom Bar - Copyright & Credits */}
+                    <motion.div
+                        variants={fadeInUp}
+                        className="mt-12 flex flex-col items-start justify-between gap-4 pt-8 text-sm text-[#E6E7D3] sm:flex-row sm:items-center"
+                    >
+                        <p>{t("copyright")}</p>
+                        <p>
+                            <span>Designed & Developed by </span>
+                            <a
+                                href="https://www.belowthefold.gr/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="font-bold transition hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-500"
+                            >
+                                Below The Fold
+                            </a>
+                        </p>
+                    </motion.div>
+                </motion.div>
             </div>
         </footer>
     );
 }
-

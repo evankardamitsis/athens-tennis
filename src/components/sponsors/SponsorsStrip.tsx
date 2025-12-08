@@ -35,16 +35,19 @@ export function SponsorsStrip() {
                     {/* Logos */}
                     <motion.div
                         variants={fadeInUp}
-                        className="flex flex-wrap items-center justify-center gap-8 sm:gap-12"
+                        className="flex flex-wrap items-center justify-center gap-12 sm:gap-12"
                     >
                         {/* VOLVO Logo */}
                         <div className="flex items-center justify-center">
                             <Image
                                 src="/VolvoLogo-02.svg"
                                 alt="Volvo"
-                                width={120}
-                                height={40}
-                                className="h-auto w-auto max-w-[120px] object-contain"
+                                width={140}
+                                height={50}
+                                className="h-auto w-auto max-w-[140px] object-contain"
+                                style={{
+                                    filter: "brightness(0)",
+                                }}
                             />
                         </div>
 
@@ -53,9 +56,12 @@ export function SponsorsStrip() {
                             <Image
                                 src="/avaton-logo-transparent- (3).svg"
                                 alt="Avaton"
-                                width={120}
-                                height={40}
-                                className="h-auto w-auto max-w-[120px] object-contain"
+                                width={140}
+                                height={50}
+                                className="h-auto w-auto max-w-[140px] object-contain"
+                                style={{
+                                    filter: "brightness(0)",
+                                }}
                             />
                         </div>
                     </motion.div>

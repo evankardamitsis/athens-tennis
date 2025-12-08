@@ -248,22 +248,22 @@
     "title": "With the support of:"
   },
   "footer": {
-    "description": "Athens' tennis championship. Balanced matches, live rankings, community.",
-    "links": {
+    "description": "Our goal is to offer an experience that respects time, skill level, and the needs of every player — without exaggerations, without difficulties.",
+    "useful": {
+      "title": "USEFUL",
       "about": "About",
-      "howItWorks": "How It Works",
-      "pricing": "Pricing",
-      "faq": "FAQ",
-      "contact": "Contact"
-    },
-    "social": {
-      "instagram": "Instagram",
-      "facebook": "Facebook"
+      "regulations": "Regulations"
     },
     "legal": {
+      "title": "LEGAL",
       "privacy": "Privacy Policy",
-      "terms": "Terms of Service"
+      "terms": "Terms of Use"
     },
-    "copyright": "© 2025 AthensTennis. All rights reserved."
+    "contact": {
+      "title": "CONTACT",
+      "email": "info@athenstennis.gr"
+    },
+    "copyright": "©2025 AthensTennis. All rights reserved.",
+    "credits": "Designed & Developed by Below The Fold"
   }
 }
