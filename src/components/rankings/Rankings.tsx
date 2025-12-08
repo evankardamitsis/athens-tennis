@@ -12,7 +12,7 @@ export function Rankings() {
     return (
         <section
             id="rankings"
-            className="relative py-16 sm:py-20 rounded-[40px]"
+            className="relative py-12 sm:py-20 rounded-[40px]"
             style={{
                 background:
                     "linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 60%)",
@@ -89,7 +89,7 @@ export function Rankings() {
                     {/* Bottom Section */}
                     <motion.div
                         variants={fadeInUp}
-                        className="mt-10 space-y-6 text-center"
+                        className="mt-12 space-y-12 text-center"
                     >
                         {/* Dotted Separator */}
                         <div className="border-t-2 border-dashed border-primary-500/40" />
@@ -105,7 +105,7 @@ export function Rankings() {
                         </div>
 
                         {/* CTA Button */}
-                        <div className="flex justify-center">
+                        <div className="flex justify-center -mt-6">
                             <a
                                 href="#how-it-works"
                                 className="inline-flex items-center justify-center rounded-full border border-[#D4DE26] px-6 py-3 text-base font-semibold text-primary-500 shadow-sm transition hover:bg-[#D4DE26]/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"

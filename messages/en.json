@@ -80,7 +80,7 @@
   },
   "registrationBanner": {
     "badge": "How it works",
-    "title": "Simply & clearly start with",
+    "title": "All you need to start playing is",
     "highlight": "3 steps",
     "note": "*Minimum participation in 3 matches to finalize your placement",
     "ctaPrimary": "Start now",
@@ -114,36 +114,56 @@
     "taglineSubtitle": "It’s your place in the standings — and your progress through the year.",
     "cta": "See how it works"
   },
+  "liveStats": {
+    "title": "Live stats from the community",
+    "items": [
+      { "value": "369", "label": "Active players (2025-26)" },
+      { "value": "2,270", "label": "Completed matches" },
+      { "value": "8th", "label": "Season" }
+    ]
+  },
   "pricing": {
-    "title": "Choose the package that suits you",
-    "description": "Flexibility to try the experience or play full season.",
-    "seasonPass": {
-      "name": "Season Pass",
-      "description": "Participation in the entire season",
-      "price": "€79",
-      "cta": "Register",
-      "perk1": "Ranking & Playoffs",
-      "perk2": "Live rankings",
-      "perk3": "Match scheduling",
-      "perk4": "Community"
+    "title": "Packages and prices",
+    "subtitle": "Find the package that suits you and start playing today without a registration fee!",
+    "payAsYouPlay": {
+      "name": "Pay as you play",
+      "priceSingle": "25€ / single match*",
+      "priceDouble": "15€ / double match*",
+      "feature1": "Includes lights",
+      "feature2": "Includes VAT",
+      "cta": "Learn more",
+      "footnote": "*Kavouri Tennis Club + Ace Indoor: 30€ /single match, 20€ /double match"
     },
-    "matchPack": {
-      "name": "Match Pack",
-      "description": "5 prepaid matches",
-      "price": "€39",
-      "cta": "Start now",
-      "perk1": "Match scheduling",
-      "perk2": "Score entry",
-      "perk3": "Ranking"
+    "p100": {
+      "name": "P100",
+      "discount": "-20%",
+      "price": "100€ (prepaid)*",
+      "detail1": "5 single matches in 1 month",
+      "detail2": "5+ matches 20% discount (20€ /match)",
+      "feature1": "Includes lights",
+      "feature2": "Includes VAT",
+      "cta": "Learn more",
+      "footnote": "*Kavouri Tennis Club + Ace Indoor: 30€ /single match, 20€ /double match"
     },
-    "note": "*Court fees not included."
+    "p300": {
+      "name": "P300",
+      "discount": "-12%",
+      "price": "300€ (prepaid)*",
+      "detail1": "Single and double matches",
+      "detail2": "No expiration date",
+      "feature1": "Includes lights",
+      "feature2": "Includes VAT",
+      "cta": "Learn more",
+      "footnote": "*Kavouri Tennis Club + Ace Indoor: 30€ /single match, 20€ /double match"
+    },
+    "footer": "Do you have any questions about the packages? See the <bold>Frequently Asked Questions</bold> here"
   },
   "viberGroup": {
     "badge": "Viber Community",
-    "title": "Join the community's Viber group.",
-    "description": "Schedule friendly matches, find opponents, learn the news first.",
-    "note": "We respect fair play & respect rules.",
-    "cta": "Join Viber"
+    "title": "Join the community's Viber group",
+    "description1": "Book matches, find opponents, be the first to know the news",
+    "description2": "We respect the rules of fair play and privacy.",
+    "cta": "Connect to the Viber group"
   },
   "facilities": {
     "badge": "Facilities",
@@ -176,7 +196,56 @@
     "tagline": "Here the game has rhythm, consistency, and character."
   },
   "faq": {
-    "title": "Frequently Asked Questions"
+    "badge": "FAQ",
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "What is the tennis championship",
+        "answer": "AthensTennis is the first amateur tennis championship in Athens. It offers a structured match system, live rankings, and an active community of players."
+      },
+      {
+        "question": "How do I declare my participation",
+        "answer": "You can register through the registration form on our website. Fill in your details, set your playing level, and you're ready to play!"
+      },
+      {
+        "question": "How do I schedule to play",
+        "answer": "You have the ability to play whenever you want, without any commitment.\n\nYou simply inform us about the days and times you are available at the available options, and we schedule the match\n\nPhone: +306936919601\nMessenger on our page on FB: Athens Tennis\nInstagram: athens.tennis\nViber: +306936919601\nWhatsApp: +306936919601\nEmail: info@athenstennis.gr"
+      },
+      {
+        "question": "Available facility options",
+        "answer": "We have partner facilities in various areas of Athens, such as Chalandri, Marousi, Kavouri, Pallini, Vrilissia, and Vari."
+      },
+      {
+        "question": "How are matches defined",
+        "answer": "Matches are arranged by players through the matchmaking system. Each player can propose a match and agree with their opponent on location and time."
+      },
+      {
+        "question": "Match conduct & procedure",
+        "answer": "Each match is conducted according to tennis rules. After the match, the result is recorded on the platform and the ranking is updated."
+      },
+      {
+        "question": "Information about the championship ranking",
+        "answer": "The ranking is updated daily and is based on match results. There are different categories based on player levels."
+      },
+      {
+        "question": "Participation cost",
+        "answer": "There are various participation packages, from pay-as-you-play to prepaid packages. See the details in the Pricing section."
+      }
+    ]
+  },
+  "touristsBanner": {
+    "title": "Are you visiting Athens and want to play tennis?",
+    "description": "Whether you're on vacation or a business trip, Athens Tennis helps you find a court, equipment, a coach, or even an opponent for a match.",
+    "features": [
+      "Court rental",
+      "Private lessons",
+      "Racket rental",
+      "Player matching"
+    ],
+    "cta": "Learn More"
+  },
+  "sponsors": {
+    "title": "With the support of:"
   },
   "footer": {
     "description": "Athens' tennis championship. Balanced matches, live rankings, community.",

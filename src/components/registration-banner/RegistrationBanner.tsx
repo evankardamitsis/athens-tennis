@@ -66,21 +66,21 @@ export function RegistrationBanner() {
                             <p className="text-xs text-white/70 sm:text-sm">{t("note")}</p>
 
                             <div className="space-y-3 pt-4">
-                                <a
-                                    href="https://athenstennis.gr/register"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                            <a
+                                href="https://athenstennis.gr/register"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                     className="inline-flex w-full items-center justify-center rounded-full bg-[#D4DE26] px-8 py-4 text-base font-semibold text-[#0B3F63]! shadow-lg shadow-black/20 transition hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B3F63]"
-                                >
-                                    {t("ctaPrimary")}
-                                </a>
-                                <div className="flex justify-center">
-                                    <a
-                                        href="#rules"
+                            >
+                                {t("ctaPrimary")}
+                            </a>
+                        <div className="flex justify-center">
+                            <a
+                                href="#rules"
                                         className="text-sm font-semibold text-[#D4DE26]! underline decoration-[#D4DE26] underline-offset-4 transition hover:text-accent-300"
-                                    >
-                                        {t("ctaSecondary")}
-                                    </a>
+                            >
+                                {t("ctaSecondary")}
+                            </a>
                                 </div>
                             </div>
                         </div>

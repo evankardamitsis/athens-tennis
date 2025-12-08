@@ -1,51 +1,56 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { fadeInUp, staggerContainer } from "@/components/shared";
 
-const stats = [
-    { value: "324", label: "Ενεργοί παίκτες" },
-    { value: "1.248", label: "Ολοκληρωμένοι αγώνες" },
-    { value: "4", label: "Σεζόν" },
-];
-
 export function LiveStats() {
+    const t = useTranslations("liveStats");
+    const stats = t.raw("items") as { value: string; label: string }[];
+
     return (
         <section
             id="stats"
-            className="relative bg-white/70 py-16 backdrop-blur sm:py-20"
+            className="relative pb-0 pt-12 sm:pt-16"
+            aria-labelledby="live-stats-heading"
         >
-            <div className="pointer-events-none absolute inset-0 -z-10 bg-linear-to-br from-emerald-100/40 via-transparent to-emerald-200/30" />
+            <div className="mx-auto max-w-[1440px] px-5">
             <motion.div
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
+                    viewport={{ once: true, amount: 0.25 }}
                 variants={staggerContainer}
-                className="mx-auto flex max-w-[1440px] flex-col items-center gap-12 px-5 text-center"
+                    className="rounded-t-[40px] bg-[#6359E30A] px-6 pb-10 pt-10 sm:px-10 sm:pb-14 sm:pt-14 lg:px-14"
             >
                 <motion.h2
                     variants={fadeInUp}
-                    className="text-2xl font-semibold text-foreground sm:text-3xl"
+                        id="live-stats-heading"
+                        className="text-center text-2xl font-bold text-primary-500 sm:text-3xl"
                 >
-                    Live στατιστικά από την κοινότητα
+                        {t("title")}
                 </motion.h2>
-                <div className="grid w-full gap-6 sm:grid-cols-3">
+
+                    <motion.div
+                        variants={staggerContainer}
+                        className="mt-10 grid gap-4 sm:grid-cols-3 sm:gap-6"
+                    >
                     {stats.map((stat) => (
                         <motion.div
+                                key={stat.label}
                             variants={fadeInUp}
-                            key={stat.label}
-                            className="rounded-2xl border border-emerald-100 bg-white p-6 shadow-lg shadow-emerald-500/10"
+                                className="rounded-3xl bg-[#6359E31A] px-6 py-7 text-center shadow-xs sm:px-8 sm:py-9"
                         >
-                            <p className="text-4xl font-semibold text-(--color-primary)">
+                                <p className="text-xl font-bold text-[#0B3F63] sm:text-4xl">
                                 {stat.value}
                             </p>
-                            <p className="mt-2 text-sm font-medium uppercase tracking-wide text-slate-500">
+                                <p className="mt-2 text-base font-semibold text-[#0B3F63] sm:text-lg">
                                 {stat.label}
                             </p>
                         </motion.div>
                     ))}
+                    </motion.div>
+                </motion.div>
                 </div>
-            </motion.div>
         </section>
     );
 }

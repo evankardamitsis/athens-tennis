@@ -1,50 +1,66 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
-import { fadeInUp } from "@/components/shared";
-
-const sponsors = [
-    "RacquetPro",
-    "CourtTime",
-    "FitFuel",
-    "AceWear",
-    "Serve&Volley",
-    "CityCourts",
-];
-
-const repeatedSponsors = [...sponsors, ...sponsors];
+import { useTranslations } from "next-intl";
+import { fadeInUp, staggerContainer } from "@/components/shared";
 
 export function SponsorsStrip() {
+    const t = useTranslations("sponsors");
+
     return (
         <section
             id="sponsors"
-            className="bg-slate-900 py-12 sm:py-16"
+            className="relative bg-neutral-100 pb-12 pt-0 sm:pb-16 sm:pt-0"
             aria-labelledby="sponsors-heading"
         >
-            <h2 id="sponsors-heading" className="sr-only">
-                Χορηγοί & Συνεργάτες
-            </h2>
-            <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
-                variants={fadeInUp}
-                className="relative overflow-hidden"
-            >
-                <div className="marquee">
-                    {repeatedSponsors.map((name, index) => (
-                        <div
-                            key={`${name}-${index}`}
-                            className="flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 px-8 py-4 text-lg font-semibold uppercase tracking-widest text-white/60 transition hover:text-white"
+            <div className="mx-auto max-w-[1440px] px-5">
+                <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.25 }}
+                    variants={staggerContainer}
+                    className="rounded-[40px] bg-white p-8 sm:p-12 lg:p-16"
+                >
+                    {/* Text */}
+                    <motion.div variants={fadeInUp} className="mb-8 text-center">
+                        <h2
+                            id="sponsors-heading"
+                            className="text-lg font-semibold text-primary-500 sm:text-xl"
                         >
-                            <span className="whitespace-nowrap">{name}</span>
+                            {t("title")}
+                        </h2>
+                    </motion.div>
+
+                    {/* Logos */}
+                    <motion.div
+                        variants={fadeInUp}
+                        className="flex flex-wrap items-center justify-center gap-8 sm:gap-12"
+                    >
+                        {/* VOLVO Logo */}
+                        <div className="flex items-center justify-center">
+                            <Image
+                                src="/VolvoLogo-02.svg"
+                                alt="Volvo"
+                                width={120}
+                                height={40}
+                                className="h-auto w-auto max-w-[120px] object-contain"
+                            />
                         </div>
-                    ))}
-                </div>
-                <div className="pointer-events-none absolute inset-y-0 left-0 w-16 bg-linear-to-r from-slate-900 via-slate-900/80 to-transparent" />
-                <div className="pointer-events-none absolute inset-y-0 right-0 w-16 bg-linear-to-l from-slate-900 via-slate-900/80 to-transparent" />
-            </motion.div>
+
+                        {/* AVATON Logo */}
+                        <div className="flex items-center justify-center">
+                            <Image
+                                src="/avaton-logo-transparent- (3).svg"
+                                alt="Avaton"
+                                width={120}
+                                height={40}
+                                className="h-auto w-auto max-w-[120px] object-contain"
+                            />
+                        </div>
+                    </motion.div>
+                </motion.div>
+            </div>
         </section>
     );
 }
-
