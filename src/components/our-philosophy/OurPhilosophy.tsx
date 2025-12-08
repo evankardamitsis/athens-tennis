@@ -21,7 +21,7 @@ const testimonials = [
     },
 ];
 
-export function Testimonials() {
+export function OurPhilosophy() {
     return (
         <section id="our-philosophy" className="bg-linear-to-b from-white to-emerald-50/60 py-16 sm:py-20">
             <div className="mx-auto max-w-[1440px] px-5">

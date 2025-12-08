@@ -1,1 +1,1 @@
-export { Features } from "./WhyUs";
+export { WhyUs } from "./WhyUs";

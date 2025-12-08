@@ -5,8 +5,7 @@ import { Structure } from "@/components/structure/Structure";
 import { Facilities } from "@/components/facilities";
 import { WhyUs } from "@/components/why-us/WhyUs";
 import { RegistrationBanner } from "@/components/registration-banner";
-import { ProblemSolve } from "@/components/problem-solve";
-import { Testimonials } from "@/components/our-philosophy";
+import { OurPhilosophy } from "@/components/our-philosophy";
 import { CalendarEmbed } from "@/components/rankings";
 import { Pricing } from "@/components/pricing";
 import { LiveStats } from "@/components/live-stats";
@@ -27,8 +26,7 @@ export default function Home() {
         <Facilities />
         <WhyUs />
         <RegistrationBanner />
-        <ProblemSolve />
-        <Testimonials />
+        <OurPhilosophy />
         <CalendarEmbed />
         <Pricing />
         <LiveStats />
