@@ -74,6 +74,9 @@ export function Structure() {
               <p className="text-lg font-normal text-slate-700">
                 {t("phase1.period")}
               </p>
+              <p className="text-sm font-normal text-slate-700">
+                {t("phase1.description")}
+              </p>
             </div>
           </div>
 

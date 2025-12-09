@@ -42,7 +42,8 @@
     "phase1": {
       "label": "Phase 1",
       "title": "Regular Season",
-      "period": "Σεπτέμβριος \u2192 Μάιος"
+      "period": "Σεπτέμβριος \u2192 Μάιος",
+      "description": "Μπορείς να ξεκινήσεις οποιαδήποτε στιγμή της Regular Season"
     },
     "phase2": {
       "label": "Phase 2",

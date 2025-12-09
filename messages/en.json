@@ -42,7 +42,8 @@
     "phase1": {
       "label": "Phase 1",
       "title": "Regular Season",
-      "period": "September \u2192 May"
+      "period": "September \u2192 May",
+      "description": "You can start anytime during the Regular Season"
     },
     "phase2": {
       "label": "Phase 2",

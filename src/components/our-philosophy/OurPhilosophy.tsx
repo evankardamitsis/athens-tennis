@@ -29,11 +29,11 @@ export function OurPhilosophy() {
                     {/* Left Side - Image */}
                     <motion.div variants={fadeInUp} className="relative">
                         <Image
-                            src="/our-philosophy-img.png"
+                            src="/philosophy.jpeg"
                             alt="Tennis player in action"
                             width={500}
                             height={700}
-                            className="h-full w-full object-contain"
+                            className="h-full w-full object-contain rounded-3xl"
                             priority
                         />
                     </motion.div>
