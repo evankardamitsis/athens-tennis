@@ -56,13 +56,13 @@ export function Hero() {
                                         href="https://athenstennis.gr/register"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="inline-flex items-center justify-center rounded-[99px] bg-[#D4DE26] px-8 py-3 text-base font-semibold text-[#0B3F63]! transition hover:bg-accent-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2"
+                                        className="inline-flex items-center justify-center rounded-[99px] bg-accent-500 px-8 py-3 text-base font-semibold text-primary-500! transition hover:bg-accent-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2"
                                     >
                                         {t("ctaPrimary")}
                                     </a>
                                     <Link
                                         href="/rules"
-                                        className="inline-flex items-center justify-center rounded-[99px] border border-[#D4DE26] bg-transparent px-8 py-3 text-base font-semibold text-[#0B3F63]! transition hover:bg-accent-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2"
+                                        className="inline-flex items-center justify-center rounded-[99px] border border-accent-500 bg-transparent px-8 py-3 text-base font-semibold text-primary-500! transition hover:bg-accent-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2"
                                     >
                                         {t("ctaSecondary")}
                                     </Link>
@@ -80,7 +80,7 @@ export function Hero() {
                                 {/* Tennis Player Image */}
                                 <div className="relative h-full w-full">
                                     <Image
-                                        src="/hero_image.png"
+                                        src="/home-hero-img.png"
                                         alt="Tennis player"
                                         fill
                                         className="object-contain object-center"
