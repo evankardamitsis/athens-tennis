@@ -29,7 +29,7 @@ export function OurPhilosophy() {
                     {/* Left Side - Image */}
                     <motion.div variants={fadeInUp} className="relative">
                         <Image
-                            src="/philosophy.jpeg"
+                            src="/philosophy.png"
                             alt="Tennis player in action"
                             width={500}
                             height={700}
