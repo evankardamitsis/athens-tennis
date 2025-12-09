@@ -18,7 +18,7 @@ export function RegistrationBanner() {
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.4 }}
                     variants={fadeIn}
-                    className="rounded-[40px] bg-[#0B3F63] px-6 py-10 text-white shadow-xl sm:px-10 sm:py-12"
+                    className="rounded-[40px] bg-primary-500 px-6 py-10 text-white shadow-xl sm:px-10 sm:py-12"
                 >
                     <div className="grid gap-10 lg:grid-cols-[0.3fr_0.7fr] lg:items-start">
                         <div className="space-y-5">
@@ -33,7 +33,7 @@ export function RegistrationBanner() {
                                 <span className="text-accent-400">{t("highlight")}</span>
                             </h2>
 
-                            <div className="pt-2">
+                            <div className="pt-2 hidden md:block lg:block">
                                 <Image
                                     src="/arrow_down.svg"
                                     alt=""
@@ -51,7 +51,7 @@ export function RegistrationBanner() {
                                     key={step.title}
                                     className="flex gap-4 rounded-3xl bg-white/10 px-4 py-4 sm:px-6"
                                 >
-                                    <div className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#D4DE26] text-base font-bold text-[#0B3F63]">
+                                    <div className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent-500 text-base font-bold text-primary-500">
                                         {index + 1}
                                     </div>
                                     <div className="space-y-1">
@@ -71,14 +71,14 @@ export function RegistrationBanner() {
                                     href="https://athenstennis.gr/register"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="inline-flex w-full items-center justify-center rounded-full bg-[#D4DE26] px-8 py-4 text-base font-semibold text-[#0B3F63]! shadow-lg shadow-black/20 transition hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B3F63]"
+                                    className="inline-flex w-full items-center justify-center rounded-full bg-accent-500 px-8 py-4 text-base font-semibold text-primary-500! shadow-lg shadow-black/20 transition hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-500"
                                 >
                                     {t("ctaPrimary")}
                                 </a>
                                 <div className="flex justify-center">
                                     <Link
                                         href="/rules"
-                                        className="text-sm font-semibold text-[#D4DE26]! underline decoration-[#D4DE26] underline-offset-4 transition hover:text-accent-300"
+                                        className="text-sm font-semibold text-accent-500! underline decoration-accent-500 underline-offset-4 transition hover:text-accent-300"
                                     >
                                         {t("ctaSecondary")}
                                     </Link>
