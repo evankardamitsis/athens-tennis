@@ -86,10 +86,10 @@ export function Navbar() {
         <div className="hidden items-center gap-4 md:flex">
           <LanguageSwitcher />
           <a
-            href="https://athenstennis.gr/register"
+            href="https://app.athenstennis.gr/register"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-[#D4DE26] px-5 py-2 text-md font-semibold text-[#0B3F63]! shadow-lg shadow-emerald-500/30 transition hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
+            className="rounded-full bg-accent-500 px-5 py-2 text-md font-semibold text-primary-500! shadow-lg shadow-emerald-500/30 transition hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
           >
             {tCommon("register")}
           </a>
@@ -132,11 +132,11 @@ export function Navbar() {
                 <LanguageSwitcher />
               </div>
               <a
-                href="https://athenstennis.gr/register"
+                href="https://app.athenstennis.gr/register"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={closeMenu}
-                className="rounded-2xl bg-[#D4DE26] px-3 py-2 text-center font-semibold text-[#0B3F63]! shadow-lg transition hover:bg-accent-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
+                className="rounded-2xl bg-accent-500 px-3 py-2 text-center font-semibold text-primary-500! shadow-lg transition hover:bg-accent-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
               >
                 {tCommon("register")}
               </a>

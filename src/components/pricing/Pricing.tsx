@@ -140,7 +140,7 @@ export function Pricing() {
                                     {/* CTA Button */}
                                     <div className="mt-6">
                                         <a
-                                            href="https://athenstennis.gr/athens-tennis/news-blog"
+                                            href="https://app.athenstennis.gr/athens-tennis/news-blog"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="inline-flex w-full items-center justify-center rounded-full bg-accent-500 px-6 py-3 text-base font-semibold text-primary-500! transition hover:bg-accent-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2"

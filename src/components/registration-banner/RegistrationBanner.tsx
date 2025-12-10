@@ -68,7 +68,7 @@ export function RegistrationBanner() {
 
                             <div className="space-y-3 pt-4">
                                 <a
-                                    href="https://athenstennis.gr/register"
+                                    href="https://app.athenstennis.gr/register"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="inline-flex w-full items-center justify-center rounded-full bg-accent-500 px-8 py-4 text-base font-semibold text-primary-500! shadow-lg shadow-black/20 transition hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-500"
