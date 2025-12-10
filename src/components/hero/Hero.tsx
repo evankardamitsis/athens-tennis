@@ -80,7 +80,7 @@ export function Hero() {
                                 {/* Tennis Player Image */}
                                 <div className="relative h-full w-full">
                                     <Image
-                                        src="/hero_ball.png"
+                                        src="/hero_best.png"
                                         alt="Tennis player"
                                         fill
                                         className="object-contain object-center"
