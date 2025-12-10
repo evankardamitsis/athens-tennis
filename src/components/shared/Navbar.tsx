@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type MouseEvent } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { fadeIn } from "@/components/shared";
@@ -44,12 +44,36 @@ export function Navbar() {
   const toggleMenu = () => setOpen((prev) => !prev);
   const closeMenu = () => setOpen(false);
 
+  const handleAnchorClick = (href: string) => (e: MouseEvent<HTMLAnchorElement>) => {
+    if (!href.startsWith("#")) return;
+    e.preventDefault();
+    // Close menu first so the content isn't covered
+    closeMenu();
+
+    const scrollToTarget = () => {
+      const target = document.querySelector(href);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        // Update hash without pushing a new history entry
+        window.history.replaceState(null, "", href);
+      } else {
+        // Fallback to default anchor behavior
+        window.location.href = href;
+      }
+    };
+
+    // Give the menu time to close before scrolling (helps on mobile)
+    window.requestAnimationFrame(() => {
+      setTimeout(scrollToTarget, 0);
+    });
+  };
+
   return (
     <motion.nav
       initial="hidden"
       animate="visible"
       variants={fadeIn}
-      className="pointer-events-none fixed left-0 top-0 z-50 w-full"
+      className="fixed left-0 top-0 z-50 w-full"
     >
       <div
         className={`pointer-events-auto mx-auto flex max-w-[1440px] items-center justify-between rounded-full border border-white/20 bg-white px-5 py-3 shadow transition-all ${isScrolled
@@ -105,6 +129,7 @@ export function Navbar() {
                 <a
                   key={item.href}
                   href={item.href}
+                  onClick={handleAnchorClick(item.href)}
                   className={`${baseClasses}${scheduleClasses}`}
                 >
                   {item.label}
@@ -188,7 +213,7 @@ export function Navbar() {
                     <a
                       key={item.href}
                       href={item.href}
-                      onClick={closeMenu}
+                      onClick={handleAnchorClick(item.href)}
                       className={`${baseClasses}${scheduleClasses}`}
                     >
                       {item.label}
