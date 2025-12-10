@@ -1,6 +1,7 @@
 {
   "common": {
     "register": "Register",
+    "login": "Login",
     "learnMore": "Learn More",
     "comingSoon": "Coming soon...",
     "nextSeason": "Next season: January 2026 — Limited spots"

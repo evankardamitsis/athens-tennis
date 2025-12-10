@@ -152,6 +152,14 @@ export function Navbar() {
         <div className="hidden items-center gap-4 md:flex">
           <LanguageSwitcher />
           <a
+            href="https://app.athenstennis.gr/login"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full border border-accent-500 px-5 py-2 text-md font-semibold text-primary-500 transition hover:bg-accent-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
+          >
+            {tCommon("login")}
+          </a>
+          <a
             href="https://app.athenstennis.gr/register"
             target="_blank"
             rel="noopener noreferrer"
@@ -235,6 +243,15 @@ export function Navbar() {
               <div className="pt-2">
                 <LanguageSwitcher />
               </div>
+              <a
+                href="https://app.athenstennis.gr/login"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={closeMenu}
+                className="rounded-2xl border border-accent-500 px-3 py-2 text-center font-semibold text-primary-500 transition hover:bg-accent-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
+              >
+                {tCommon("login")}
+              </a>
               <a
                 href="https://app.athenstennis.gr/register"
                 target="_blank"
