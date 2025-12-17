@@ -119,7 +119,7 @@
     "badge": "How it works",
     "title": "All you need to start playing is",
     "highlight": "3 steps",
-    "note": "*Minimum participation in 3 matches to finalize your placement. No registration fee.",
+    "note": "*Minimum participation in 3 matches to finalize your atrp placement. No registration fee.",
     "ctaPrimary": "Start now",
     "ctaSecondary": "See the rules",
     "steps": [
@@ -254,7 +254,7 @@
       },
       {
         "question": "How are matches defined",
-        "answer": "Matches are arranged by players through the matchmaking system. Each player can propose a match and agree with their opponent on location and time."
+        "answer": "Matches are defined by the organization after agreement from the players for location and time."
       },
       {
         "question": "Match conduct & procedure",
